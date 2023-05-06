@@ -1,25 +1,49 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/configuration-reference
 version: 2.1
+executors:
+  sdf:
+    docker:
+      - image: cimg/openjdk:19.0-node
+        environment:
+          TZ: America/New_York
+    working_directory: /home/circleci/project/
+commands:
+  setup-env:
+    description: Fully configures the environment for use with SDF
+    steps:
+      - setup-npm
+      - setup-sdf
+  setup-npm:
+    description: Configures npm
+    steps:
+      - run:
+          name: Configure npm
+          command: |
+            mkdir ~/.npm-global
+            npm config set prefix '~/.npm-global'
+            sudo chown -R `whoami` /usr/local/lib/node_modules
+            sudo chown -R `whoami` ~/.npm-global
+            echo "export PATH=~/.npm-global/bin:$PATH" >> $BASH_ENV
+            source ~/.profile
+  setup-sdf:
+    description: Installs SDF
+    steps:
+      - run:
+          name: Install SDF
+          command: |
+            npm install -g @oracle/suitecloud-unit-testing jest
+            npm install -g --acceptsuitecloudsdklicense @oracle/suitecloud-cli
+            echo 'suitecloud version:'
+            suitecloud --version
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/configuration-reference/#jobs
 jobs:
   say-hello:
-    # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/configuration-reference/#executor-job
-    docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/configuration-reference/#steps
+    executor: sdf
     steps:
       - checkout
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
 
-# Orchestrate jobs using workflows
-# See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
     jobs:
