@@ -10,7 +10,6 @@ commands:
   setup-env:
     description: Fully configures the environment for use with SDF
     steps:
-      - setup-npm
       - setup-sdf
   setup-npm:
     description: Configures npm
@@ -30,7 +29,7 @@ commands:
       - run:
           name: Install SDF
           command: |
-            npm install -g @oracle/suitecloud-unit-testing jest @oracle/suitecloud-cli --acceptsuitecloudsdklicense 
+            npm install -g jest @oracle/suitecloud-unit-testing @oracle/suitecloud-cli --acceptsuitecloudsdklicense 
             echo "suitecloud version: $(suitecloud --version)"
 
 jobs:
