@@ -30,16 +30,15 @@ commands:
       - run:
           name: Install SDF
           command: |
-            npm install -g @oracle/suitecloud-unit-testing jest
-            npm install -g --acceptsuitecloudsdklicense @oracle/suitecloud-cli
-            echo 'suitecloud version:'
-            suitecloud --version
+            npm install -g @oracle/suitecloud-unit-testing jest @oracle/suitecloud-cli --acceptsuitecloudsdklicense 
+            echo "suitecloud version: $(suitecloud --version)"
 
 jobs:
   say-hello:
     executor: sdf
     steps:
       - checkout
+      - setup-env
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
