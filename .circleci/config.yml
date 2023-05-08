@@ -20,5 +20,3 @@ workflows:
                 path: reports/jest.xml
             - store_artifacts:
                 path: reports/coverage
-
-# arbitrary
