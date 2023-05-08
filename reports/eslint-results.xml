@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/ericgrubaugh/dev/ericgrubaughcompass/__tests__/sample-test.js">
+<testcase time="0" name="org.eslint.unknown" classname="/home/ericgrubaugh/dev/ericgrubaughcompass/__tests__/sample-test"><error message="Parsing error: &apos;import&apos; and &apos;export&apos; may appear only with &apos;sourceType: module&apos;"><![CDATA[line 1, col 1, Error - Parsing error: &apos;import&apos; and &apos;export&apos; may appear only with &apos;sourceType: module&apos;]]></error></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/ericgrubaugh/dev/ericgrubaughcompass/src/FileCabinet/SuiteScripts/cl_test.js">
+<testcase time="0" name="/home/ericgrubaugh/dev/ericgrubaughcompass/src/FileCabinet/SuiteScripts/cl_test.js" classname="/home/ericgrubaugh/dev/ericgrubaughcompass/src/FileCabinet/SuiteScripts/cl_test" />
+</testsuite>
+</testsuites>
