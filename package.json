@@ -2,8 +2,8 @@
   "name": "ucns-test-cci",
   "version": "0.1.0",
   "scripts": {
-    "lint": "eslint",
-    "lint-ci": "eslint --format junit",
+    "lint": "eslint src/**/*.js __tests__/**/*.js",
+    "lint-ci": "eslint src/**/*.js __tests__/**/*.js --format junit --output-file reports/eslint-results.xml",
     "test": "jest",
     "test-ci": "jest --runInBand"
   },

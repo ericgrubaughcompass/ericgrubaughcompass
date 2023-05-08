@@ -3,8 +3,8 @@
     "amd": true,
     "browser": true,
     "commonjs":true,
-    "es6": true,
-    "jest": true
+    "jest": true,
+    "es2019": true
   },
   "globals": {
     "log":false,
@@ -15,8 +15,7 @@
     "google"
   ],
   "parserOptions": {
-    "requireConfigFile": false,
-    "ecmaVersion": 2019
+    "requireConfigFile": false
   },
   "rules": {
     "quotes": [
