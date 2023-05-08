@@ -8,13 +8,13 @@ executors:
         environment:
           TZ: America/New_York
 workflows:
-  test:
-    jobs:
-      - node/test:
-          run-command: test-ci
-          override-ci-command: npm ci --acceptsuitecloudsdklicense
-          test-results-for: jest
-          test-results-path: reports
+#  test:
+#    jobs:
+#      - node/test:
+#          run-command: test-ci
+#          override-ci-command: npm ci --acceptsuitecloudsdklicense
+#          test-results-for: jest
+#          test-results-path: reports
   test-coverage:
     jobs:
       - node/test:
@@ -22,3 +22,5 @@ workflows:
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
           test-results-path: reports
+      - store_artifacts:
+          path: reports/lcov
