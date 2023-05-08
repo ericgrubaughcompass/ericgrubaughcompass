@@ -40,7 +40,6 @@ workflows:
             - store_artifacts:
                 path: reports/coverage
       - lint
-      - version
       - hold:
           type: approval
           requires:
