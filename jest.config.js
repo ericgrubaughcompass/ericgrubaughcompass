@@ -13,5 +13,4 @@ module.exports = {
 	collectCoverage: false,
 	collectCoverageFrom: [`${cliConfig.defaultProjectFolder}/FileCabinet/SuiteScripts/**/*.{js,jsx}`],
 	coverageDirectory: "reports/coverage",
-	coverageReporters: ["html"]
 };
