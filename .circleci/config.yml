@@ -7,10 +7,10 @@ executors:
       - image: cimg/openjdk:19.0-node
         environment:
           TZ: America/New_York
-    working_directory: /home/circleci/project/
 workflows:
   test:
     jobs:
       - node/test:
+          run-command: test-ci
           test-results-for: jest
           override-ci-command: npm ci --acceptsuitecloudsdklicense
