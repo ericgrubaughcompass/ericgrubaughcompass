@@ -35,3 +35,7 @@ jobs:
     executor: sdf
     steps:
       - test-coverage
+workflows:
+  main:
+    jobs:
+      - test-coverage
