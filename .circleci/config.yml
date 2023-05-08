@@ -7,8 +7,9 @@ executors:
       - image: cimg/openjdk:19.0-node
         environment:
           TZ: America/New_York
-jobs:
+commands:
   test:
+    description: Runs unit test suite without code coverage
     steps:
       - node/test:
           run-command: test-ci
@@ -16,6 +17,7 @@ jobs:
           test-results-for: jest
           test-results-path: reports
   test-coverage:
+    description: Runs unit test suite with code coverage
     steps:
       - node/test:
           run-command: test-ci-coverage
@@ -24,10 +26,12 @@ jobs:
           test-results-path: reports
       - store_artifacts:
           path: reports/lcov
-workflows:
+jobs:
   test:
-    jobs:
+    executor: sdf
+    steps:
       - test
   test-coverage:
-    jobs:
+    executor: sdf
+    steps:
       - test-coverage
