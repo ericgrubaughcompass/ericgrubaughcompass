@@ -5,7 +5,8 @@
     "lint": "eslint src/**/*.js __tests__/**/*.js",
     "lint-ci": "eslint src/**/*.js __tests__/**/*.js --format junit --output-file reports/eslint-results.xml",
     "test": "jest",
-    "test-ci": "jest --runInBand"
+    "test-ci": "jest --runInBand",
+    "test-ci-coverage": "jest --runInBand --collectCoverage=true"
   },
   "devDependencies": {
     "eslint": "^8",

@@ -12,5 +12,13 @@ workflows:
     jobs:
       - node/test:
           run-command: test-ci
-          test-results-for: jest
           override-ci-command: npm ci --acceptsuitecloudsdklicense
+          test-results-for: jest
+          test-results-path: reports
+  test-coverage:
+    jobs:
+      - node/test:
+          run-command: test-ci-coverage
+          override-ci-command: npm ci --acceptsuitecloudsdklicense
+          test-results-for: jest
+          test-results-path: reports

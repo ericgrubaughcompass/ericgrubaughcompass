@@ -8,5 +8,6 @@ module.exports = {
 	}),
 	reporters: [ "default", "jest-junit" ],
 	collectCoverage: false,
-	collectCoverageFrom: [`${cliConfig.defaultProjectFolder}/FileCabinet/SuiteScripts/**/*.{js,jsx}`]
+	collectCoverageFrom: [`${cliConfig.defaultProjectFolder}/FileCabinet/SuiteScripts/**/*.{js,jsx}`],
+	coverageDirectory: "reports",
 };
