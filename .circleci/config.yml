@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  node: circleci/node@5.1.0
 executors:
   sdf:
     docker:
@@ -7,42 +9,13 @@ executors:
           TZ: America/New_York
     working_directory: /home/circleci/project/
 commands:
-  setup-env:
-    description: Fully configures the environment for use with SDF
-    steps:
-      - setup-sdf
-  setup-npm:
-    description: Configures npm
-    steps:
-      - run:
-          name: Configure npm
-          command: |
-            mkdir ~/.npm-global
-            npm config set prefix '~/.npm-global'
-            sudo chown -R `whoami` /usr/local/lib/node_modules
-            sudo chown -R `whoami` ~/.npm-global
-            echo "export PATH=~/.npm-global/bin:$PATH" >> $BASH_ENV
-            source ~/.profile
-  setup-sdf:
-    description: Installs SDF
-    steps:
-      - run:
-          name: Install SDF
-          command: |
-            npm install -g jest @oracle/suitecloud-unit-testing @oracle/suitecloud-cli --acceptsuitecloudsdklicense 
-            echo "suitecloud version: $(suitecloud --version)"
-
 jobs:
-  say-hello:
+  build_and_test:
     executor: sdf
     steps:
       - checkout
-      - setup-env
+      - node/install-packages:
+          pkg-manager: npm
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
-
-workflows:
-  say-hello-workflow:
-    jobs:
-      - say-hello
+          command: npm test
+          name: Unit Tests
