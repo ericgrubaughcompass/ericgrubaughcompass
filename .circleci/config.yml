@@ -14,7 +14,7 @@ workflows:
           run-command: test-ci-coverage
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
-          test-results-path: reports
+          test-results-path: reports/jest.xml
           post-steps:
             - store_artifacts:
-                path: reports/lcov
+                path: reports/coverage

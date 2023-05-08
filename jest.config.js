@@ -6,8 +6,12 @@ module.exports = {
 		projectFolder: cliConfig.defaultProjectFolder,
 		projectType: SuiteCloudJestConfiguration.ProjectType.ACP,
 	}),
-	reporters: [ "default", "jest-junit" ],
+	reporters: [
+		"default",
+		['jest-junit', {outputDirectory: 'reports', outputName: 'jest.xml'}]
+	],
 	collectCoverage: false,
 	collectCoverageFrom: [`${cliConfig.defaultProjectFolder}/FileCabinet/SuiteScripts/**/*.{js,jsx}`],
-	coverageDirectory: "reports",
+	coverageDirectory: "reports/coverage",
+	coverageReporters: ["html"]
 };
