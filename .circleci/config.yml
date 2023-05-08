@@ -13,3 +13,4 @@ workflows:
     jobs:
       - node/test:
           test-results-for: jest
+          override-ci-command: npm ci --acceptsuitecloudsdklicense
