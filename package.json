@@ -2,7 +2,7 @@
   "name": "ucns-test-cci",
   "version": "0.1.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest --ci"
   },
   "devDependencies": {
     "jest": "^29",
