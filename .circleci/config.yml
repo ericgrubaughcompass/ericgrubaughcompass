@@ -8,7 +8,7 @@ executors:
         environment:
           TZ: America/New_York
 jobs:
-  test:
+  run-test:
     executor: sdf
     steps:
       - node/test:
@@ -16,7 +16,7 @@ jobs:
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
           test-results-path: reports
-  test-coverage:
+  run-test-coverage:
     executor: sdf
     steps:
       - node/test:
