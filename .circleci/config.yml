@@ -7,21 +7,27 @@ executors:
       - image: cimg/openjdk:19.0-node
         environment:
           TZ: America/New_York
-workflows:
-#  test:
-#    jobs:
-#      - node/test:
-#          run-command: test-ci
-#          override-ci-command: npm ci --acceptsuitecloudsdklicense
-#          test-results-for: jest
-#          test-results-path: reports
+jobs:
+  test:
+    steps:
+      - node/test:
+          run-command: test-ci
+          override-ci-command: npm ci --acceptsuitecloudsdklicense
+          test-results-for: jest
+          test-results-path: reports
   test-coverage:
-    jobs:
+    steps:
       - node/test:
           run-command: test-ci-coverage
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
           test-results-path: reports
-      - run:
-          store_artifacts:
-            path: reports/lcov
+      - store_artifacts:
+          path: reports/lcov
+workflows:
+  test:
+    jobs:
+      - test
+  test-coverage:
+    jobs:
+      - test-coverage
