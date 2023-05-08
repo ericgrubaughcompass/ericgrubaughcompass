@@ -22,5 +22,6 @@ workflows:
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
           test-results-path: reports
-      - store_artifacts:
-          path: reports/lcov
+      - run:
+          store_artifacts:
+            path: reports/lcov
