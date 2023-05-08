@@ -8,19 +8,31 @@ executors:
       - image: cimg/openjdk:19.0-node
         environment:
           TZ: America/New_York
+commands:
+  install:
+    description: Checks out code and installs npm package
+    steps:
+      - checkout
+      - node/install-packages:
+          override-ci-command: npm ci --acceptsuitecloudsdklicense
 jobs:
   lint:
     executor: sdf
     steps:
+      - install
       - run: npm run lint-ci
-  version:
+      - store_artifacts:
+          path: reports/eslint-results.xml
+  deploy:
     executor: sdf
     steps:
+      - install
       - run: suitecloud --version
 workflows:
   main:
     jobs:
       - node/test:
+          resource_class: medium
           run-command: test-ci-coverage
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
@@ -29,3 +41,11 @@ workflows:
                 path: reports/coverage
       - lint
       - version
+      - hold:
+          type: approval
+          requires:
+            - node/test
+            - lint
+      - deploy:
+          requires:
+            - hold
