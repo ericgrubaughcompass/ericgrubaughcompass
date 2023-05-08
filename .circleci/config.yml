@@ -3,7 +3,7 @@ orbs:
   node: circleci/node@5.1.0
 executors:
   sdf:
-    resource_class: medium
+    resource_class: small
     docker:
       - image: cimg/openjdk:19.0-node
         environment:
@@ -32,7 +32,7 @@ workflows:
   main:
     jobs:
       - node/test:
-          resource_class: medium
+          resource_class: small
           run-command: test-ci-coverage
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
