@@ -3,10 +3,20 @@ orbs:
   node: circleci/node@5.1.0
 executors:
   sdf:
+    resource_class: medium
     docker:
       - image: cimg/openjdk:19.0-node
         environment:
           TZ: America/New_York
+jobs:
+  lint:
+    executor: sdf
+    steps:
+      - run: npm run lint-ci
+  version:
+    executor: sdf
+    steps:
+      - run: suitecloud --version
 workflows:
   main:
     jobs:
@@ -17,3 +27,5 @@ workflows:
           post-steps:
             - store_artifacts:
                 path: reports/coverage
+      - lint
+      - version
