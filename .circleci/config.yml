@@ -8,14 +8,8 @@ executors:
         environment:
           TZ: America/New_York
     working_directory: /home/circleci/project/
-commands:
-jobs:
-  build_and_test:
-    executor: sdf
-    steps:
-      - checkout
-      - node/install-packages:
-          pkg-manager: npm
-      - run:
-          command: npm test
-          name: Unit Tests
+workflows:
+  test:
+    jobs:
+      - node/test:
+          test-results-for: jest
