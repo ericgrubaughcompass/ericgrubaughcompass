@@ -8,10 +8,16 @@ module.exports = {
 	}),
 	reporters: [
 		"default",
-		['jest-junit', {outputDirectory: 'reports', outputName: 'jest.xml'}]
+		"jest-junit"
 	],
 	collectCoverage: false,
-	collectCoverageFrom: [`${cliConfig.defaultProjectFolder}/FileCabinet/SuiteScripts/**/*.{js,jsx}`],
+	collectCoverageFrom: [
+		`${cliConfig.defaultProjectFolder}/FileCabinet/SuiteScripts/**/*.{js,jsx}`
+	],
 	coverageDirectory: "reports/coverage",
-	coverageReporters: ["json-summary", "json", "html"]
+	coverageReporters: [
+		"html",
+		"json",
+		"json-summary"
+	]
 };
