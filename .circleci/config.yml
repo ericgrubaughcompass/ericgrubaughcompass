@@ -14,6 +14,7 @@ workflows:
                 path: reports/coverage
             - lint
             - save-token:
+                name: Saving Token
                 account: << pipeline.parameters.netsuite_account >>
                 tokenid: $SB1_TOKEN_ID
                 tokensecret: $SB1_TOKEN_SECRET
