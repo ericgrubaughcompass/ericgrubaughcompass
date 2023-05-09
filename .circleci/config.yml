@@ -35,11 +35,10 @@ workflows:
           run-command: test-ci-coverage
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
-          pre-steps:
-            - lint
           post-steps:
             - store_artifacts:
                 path: reports/coverage
+            - lint
       - hold:
           type: approval
           requires:
