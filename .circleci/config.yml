@@ -15,14 +15,13 @@ commands:
       - checkout
       - node/install-packages:
           override-ci-command: npm ci --acceptsuitecloudsdklicense
-jobs:
   lint:
-    executor: sdf
+    description: Run linter and store results as an artifact
     steps:
-      - install
       - run: npm run lint-ci
       - store_artifacts:
           path: reports/eslint.html
+jobs:
   deploy:
     executor: sdf
     steps:
@@ -36,15 +35,15 @@ workflows:
           run-command: test-ci-coverage
           override-ci-command: npm ci --acceptsuitecloudsdklicense
           test-results-for: jest
+          pre-steps:
+            - lint
           post-steps:
             - store_artifacts:
                 path: reports/coverage
-      - lint
       - hold:
           type: approval
           requires:
             - node/test
-            - lint
       - deploy:
           requires:
             - hold
