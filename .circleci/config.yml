@@ -26,7 +26,7 @@ jobs:
     executor: sdf
     steps:
       - install
-      - run: suitecloud --version
+      - run: npm run deploy
 workflows:
   main:
     jobs:
