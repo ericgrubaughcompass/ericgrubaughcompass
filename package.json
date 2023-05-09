@@ -2,13 +2,14 @@
   "name": "ucns-test-cci",
   "version": "0.1.0",
   "scripts": {
-    "deploy": "suitecloud --version",
     "lint": "eslint src/**/*.js __tests__/**/*.js",
     "lint-ci": "eslint src/**/*.js __tests__/**/*.js --format html --output-file reports/eslint.html",
     "test": "jest",
     "test-coverage": "jest --collectCoverage=true",
-    "test-ci": "jest --runInBand",
-    "test-ci-coverage": "jest --runInBand --collectCoverage=true"
+    "test-ci": "jest --ci --runInBand",
+    "test-ci-coverage": "jest --ci --runInBand --collectCoverage=true",
+    "sdf-validate": "suitecloud project:deploy --dryrun",
+    "sdf-deploy": "suitecloud project:deploy"
   },
   "devDependencies": {
     "eslint": "^8",
