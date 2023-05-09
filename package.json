@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "lint": "eslint src/**/*.js __tests__/**/*.js",
-    "lint-ci": "eslint src/**/*.js __tests__/**/*.js --format junit --output-file reports/eslint-results.xml",
+    "lint-ci": "eslint src/**/*.js __tests__/**/*.js --format html --output-file reports/eslint.html",
     "test": "jest",
     "test-coverage": "jest --collectCoverage=true",
     "test-ci": "jest --runInBand",

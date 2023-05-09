@@ -22,7 +22,7 @@ jobs:
       - install
       - run: npm run lint-ci
       - store_artifacts:
-          path: reports/eslint-results.xml
+          path: reports/eslint.html
   deploy:
     executor: sdf
     steps:
