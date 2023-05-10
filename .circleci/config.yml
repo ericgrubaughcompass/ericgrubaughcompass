@@ -1,0 +1,90 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.1.0
+workflows:
+  main:
+    jobs:
+      - node/test:
+          resource_class: small
+          run-command: test-ci-coverage
+          override-ci-command: npm ci --acceptsuitecloudsdklicense
+          test-results-for: jest
+          post-steps:
+            - store_artifacts:
+                path: reports/coverage
+            - lint
+            - save-token:
+                account: << pipeline.parameters.netsuite_account >>
+                tokenid: $SB1_TOKEN_ID
+                tokensecret: $SB1_TOKEN_SECRET
+            - validate
+      - hold:
+          type: approval
+          requires:
+            - node/test
+      - deploy:
+          requires:
+            - hold
+parameters:
+  netsuite_account:
+    description: The Account ID for the target NetSuite environment
+    type: enum
+    enum: [ "3751499", "3751499_SB1", "3751499_SB2" ]
+    default: "3751499_SB1"
+  commit_reference:
+    description: The git commit reference (commit hash, branch name, tag name, etc) to operate on
+    type: string
+    default: ''
+jobs:
+  deploy:
+    executor: sdf
+    steps:
+      - install
+      - save-token:
+          account: "3751499_SB1"
+          tokenid: $SB1_TOKEN_ID
+          tokensecret: $SB1_TOKEN_SECRET
+      - run: npm run sdf-deploy
+commands:
+  install:
+    description: Checks out code and installs npm package
+    steps:
+      - checkout
+      - node/install-packages:
+          override-ci-command: npm ci --acceptsuitecloudsdklicense
+  lint:
+    description: Lint all code and save results
+    steps:
+      - run: npm run lint-ci
+      - store_artifacts:
+          path: reports/eslint.html
+  save-token:
+    description: |
+      Create an SDF Token for the specified environment.
+    parameters:
+      account:
+        description: The NetSuite Account ID
+        type: enum
+        enum: [ "3751499", "3751499_SB1", "3751499_SB2" ]
+        default: "3751499_SB1"
+      tokenid:
+        description: The NetSuite Token ID
+        type: string
+      tokensecret:
+        description: The NetSuite Token Secret
+        type: string
+    steps:
+      - run: |
+          export PATH=$PATH:/home/circleci/project/node_modules/.bin
+          suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.tokenid >> --tokensecret << parameters.tokensecret >>
+  validate:
+    description: Validate the SDF Project
+    steps:
+      - run: npm run sdf-validate
+executors:
+  sdf:
+    resource_class: small
+    docker:
+      - image: cimg/openjdk:19.0-node
+        environment:
+          TZ: America/New_York

@@ -1,0 +1,25 @@
+{
+  "name": "ucns-test-cci",
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "eslint src/**/*.js __tests__/**/*.js",
+    "lint-ci": "eslint src/**/*.js __tests__/**/*.js --format html --output-file reports/eslint.html",
+    "test": "jest",
+    "test-coverage": "jest --collectCoverage=true",
+    "test-ci": "jest --ci --runInBand",
+    "test-ci-coverage": "jest --ci --runInBand --collectCoverage=true",
+    "sdf-validate": "suitecloud project:deploy --dryrun",
+    "sdf-deploy": "suitecloud project:deploy"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-google": "latest",
+    "eslint-plugin-jest": "^27",
+    "jest": "^29",
+    "jest-junit": "^16",
+    "suitecloud-unit-testing-stubs": "^1",
+    "@oracle/suitecloud-unit-testing": "^1",
+    "@oracle/suitecloud-cli": "^1",
+    "@types/jest": "^29"
+  }
+}
