@@ -1,5 +1,5 @@
 {
-  "name": "ucns-test-cci",
+  "name": "compass-netsuite",
   "version": "0.1.0",
   "scripts": {
     "lint": "eslint src/**/*.js __tests__/**/*.js",

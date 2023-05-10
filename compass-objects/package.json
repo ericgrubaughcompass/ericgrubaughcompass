@@ -1,0 +1,17 @@
+{
+  "name": "compass-netsuite-objects",
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "echo Project intentionally not linted",
+    "lint-ci": "echo Project intentionally not linted",
+    "test": "echo Project intentionally not tested",
+    "test-coverage": "echo Project intentionally not tested",
+    "test-ci": "echo Project intentionally not tested",
+    "test-ci-coverage": "echo Project intentionally not tested",
+    "sdf-validate": "suitecloud project:deploy --dryrun",
+    "sdf-deploy": "suitecloud project:deploy"
+  },
+  "devDependencies": {
+    "@oracle/suitecloud-cli": "^1"
+  }
+}
