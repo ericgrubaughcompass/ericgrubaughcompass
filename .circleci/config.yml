@@ -80,7 +80,8 @@ commands:
   validate:
     description: Validate the SDF Project
     steps:
-      - run: npm run sdf-validate
+      - run: |
+          npm run sdf-validate
 executors:
   sdf:
     resource_class: small
