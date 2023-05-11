@@ -4,14 +4,12 @@ orbs:
 workflows:
   main:
     jobs:
-      - build:
-          working_directory: compass
+      - build
       - hold:
           type: approval
           requires:
             - build
       - deploy:
-          working_directory: compass
           requires:
             - hold
 parameters:
@@ -27,6 +25,7 @@ parameters:
 jobs:
   build:
     executor: sdf
+    working_directory: ~/project/compass
     steps:
       - install
       - test:
@@ -38,6 +37,7 @@ jobs:
           token_secret: $SB1_TOKEN_SECRET
   deploy:
     executor: sdf
+    working_directory: ~/project/compass
     steps:
       - install
       - deploy:
@@ -70,6 +70,7 @@ commands:
       - checkout
       - node/install-packages:
           override-ci-command: npm ci --acceptsuitecloudsdklicense
+          app-dir: compass
   lint:
     description: Lint all code and save results
     steps:
