@@ -25,23 +25,26 @@ parameters:
 jobs:
   build:
     executor: sdf
-    working_directory: ./compass
     steps:
-      - install
+      - install:
+          project: compass
       - test:
+          project: compass
           with-coverage: true
-      - lint
+      - lint:
+          project: compass
       - validate:
           account: << pipeline.parameters.netsuite_account >>
+          project: compass
           token_id: $SB1_TOKEN_ID
           token_secret: $SB1_TOKEN_SECRET
   deploy:
     executor: sdf
-    working_directory: ./compass
     steps:
       - install
       - deploy:
           account: << pipeline.parameters.netsuite_account >>
+          project: compass
           token_id: $SB1_TOKEN_ID
           token_secret: $SB1_TOKEN_SECRET
 commands:
@@ -53,6 +56,11 @@ commands:
         type: enum
         enum: [ "3751499", "3751499_SB1", "3751499_SB2" ]
         default: "3751499_SB1"
+      project:
+        description: The SDF Project to deploy
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
       token_id:
         description: The NetSuite Token ID
         type: string
@@ -61,21 +69,34 @@ commands:
         type: string
     steps:
       - run: |
-          export PATH=$PATH:/home/circleci/project/node_modules/.bin
+          export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
           suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
-          npm run sdf-deploy
+          npm run sdf-deploy --prefix ./<< parameters.project >>
   install:
     description: Checks out code and installs npm package
+    parameters:
+      project:
+        description: The SDF Project to install
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
     steps:
       - checkout
       - node/install-packages:
+          app-dir: ./<< parameters.project >>
           override-ci-command: npm ci --acceptsuitecloudsdklicense
   lint:
     description: Lint all code and save results
+    parameters:
+      project:
+        description: The SDF Project to lint
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
     steps:
-      - run: npm run lint-ci
+      - run: npm run lint-ci --prefix ./<< parameters.project >>
       - store_artifacts:
-          path: reports/eslint.html
+          path: << parameters.project >>/reports/eslint.html
   test:
     description: Test the SDF Project, optionally producing a code coverage report as well
     parameters:
@@ -85,19 +106,24 @@ commands:
           true to generate code coverage report; false otherwise.
         type: boolean
         default: true
+      project:
+        description: The SDF Project to test
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
     steps:
       - when:
           condition: << parameters.with-coverage >>
           steps:
-            - run: npm run test-ci-coverage
+            - run: npm run test-ci-coverage --prefix ./<< parameters.project >>
             - store_artifacts:
-                path: reports/coverage
+                path: << parameters.project >>/reports/coverage
       - unless:
           condition: << parameters.with-coverage >>
           steps:
-            - run: npm run test-ci
+            - run: npm run test-ci --prefix ./<< parameters.project >>
       - store_test_results:
-          path: reports/jest.xml
+          path: << parameters.project >>/reports/jest.xml
   validate:
     description: Validate the SDF Project
     parameters:
@@ -106,6 +132,11 @@ commands:
         type: enum
         enum: [ "3751499", "3751499_SB1", "3751499_SB2" ]
         default: "3751499_SB1"
+      project:
+        description: The SDF Project to test
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
       token_id:
         description: The NetSuite Token ID
         type: string
@@ -114,9 +145,9 @@ commands:
         type: string
     steps:
       - run: |
-          export PATH=$PATH:/home/circleci/project/node_modules/.bin
+          export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
           suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
-          npm run sdf-validate
+          npm run sdf-validate --prefix ./<< parameters.project >>
 executors:
   sdf:
     resource_class: small
