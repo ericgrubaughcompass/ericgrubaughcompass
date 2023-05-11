@@ -167,6 +167,6 @@ executors:
   sdf:
     resource_class: small
     docker:
-      - image: cimg/openjdk:19.0-node
+      - image: cimg/openjdk:17.0-node
         environment:
           TZ: America/New_York
