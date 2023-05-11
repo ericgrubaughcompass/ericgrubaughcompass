@@ -68,10 +68,12 @@ commands:
         description: The NetSuite Token Secret
         type: string
     steps:
-      - run: |
-          export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
-          suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
-          npm run sdf-deploy --prefix ./<< parameters.project >>
+      - run:
+          name: Deploy << parameters.project >>
+          command: |
+            export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
+            suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
+            npm run sdf-deploy --prefix ./<< parameters.project >>
   install:
     description: Checks out code and installs npm package
     parameters:
@@ -94,7 +96,10 @@ commands:
         enum: [ "compass", "compass-workflows", "compass-objects" ]
         default: compass
     steps:
-      - run: npm run lint-ci --prefix ./<< parameters.project >>
+      - run:
+          name: Lint << parameters.project >>
+          command: |
+            npm run lint-ci --prefix ./<< parameters.project >>
       - store_artifacts:
           path: << parameters.project >>/reports/eslint.html
   test:
@@ -115,13 +120,19 @@ commands:
       - when:
           condition: << parameters.with-coverage >>
           steps:
-            - run: npm run test-ci-coverage --prefix ./<< parameters.project >>
+            - run:
+                name: Unit Test << parameters.project >>
+                command: |
+                  npm run test-ci-coverage --prefix ./<< parameters.project >>
             - store_artifacts:
                 path: << parameters.project >>/reports/coverage
       - unless:
           condition: << parameters.with-coverage >>
           steps:
-            - run: npm run test-ci --prefix ./<< parameters.project >>
+            - run:
+                name: Unit Test << parameters.project >>
+                command: |
+                  npm run test-ci --prefix ./<< parameters.project >>
       - store_test_results:
           path: << parameters.project >>/reports/jest.xml
   validate:
@@ -144,10 +155,12 @@ commands:
         description: The NetSuite Token Secret
         type: string
     steps:
-      - run: |
-          export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
-          suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
-          npm run sdf-validate --prefix ./<< parameters.project >>
+      - run:
+          name: Validate << parameters.project >>
+          command: |
+            export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
+            suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
+            npm run sdf-validate --prefix ./<< parameters.project >>
 executors:
   sdf:
     resource_class: small
