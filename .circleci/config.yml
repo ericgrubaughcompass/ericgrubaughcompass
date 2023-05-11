@@ -4,24 +4,11 @@ orbs:
 workflows:
   main:
     jobs:
-      - node/test:
-          resource_class: small
-          run-command: test-ci-coverage
-          override-ci-command: npm ci --acceptsuitecloudsdklicense
-          test-results-for: jest
-          post-steps:
-            - store_artifacts:
-                path: reports/coverage
-            - lint
-            - save-token:
-                account: << pipeline.parameters.netsuite_account >>
-                tokenid: $SB1_TOKEN_ID
-                tokensecret: $SB1_TOKEN_SECRET
-            - validate
+      - build
       - hold:
           type: approval
           requires:
-            - node/test
+            - build
       - deploy:
           requires:
             - hold
@@ -36,55 +23,150 @@ parameters:
     type: string
     default: ''
 jobs:
+  build:
+    executor: sdf
+    steps:
+      - install:
+          project: compass
+      - test:
+          project: compass
+          with-coverage: true
+      - lint:
+          project: compass
+      - validate:
+          account: << pipeline.parameters.netsuite_account >>
+          project: compass
+          token_id: $SB1_TOKEN_ID
+          token_secret: $SB1_TOKEN_SECRET
   deploy:
     executor: sdf
     steps:
       - install
-      - save-token:
-          account: "3751499_SB1"
-          tokenid: $SB1_TOKEN_ID
-          tokensecret: $SB1_TOKEN_SECRET
-      - run: npm run sdf-deploy
+      - deploy:
+          account: << pipeline.parameters.netsuite_account >>
+          project: compass
+          token_id: $SB1_TOKEN_ID
+          token_secret: $SB1_TOKEN_SECRET
 commands:
-  install:
-    description: Checks out code and installs npm package
-    steps:
-      - checkout
-      - node/install-packages:
-          override-ci-command: npm ci --acceptsuitecloudsdklicense
-  lint:
-    description: Lint all code and save results
-    steps:
-      - run: npm run lint-ci
-      - store_artifacts:
-          path: reports/eslint.html
-  save-token:
-    description: |
-      Create an SDF Token for the specified environment.
+  deploy:
+    description: Deploys the SDF Project
     parameters:
       account:
         description: The NetSuite Account ID
         type: enum
         enum: [ "3751499", "3751499_SB1", "3751499_SB2" ]
         default: "3751499_SB1"
-      tokenid:
+      project:
+        description: The SDF Project to deploy
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
+      token_id:
         description: The NetSuite Token ID
         type: string
-      tokensecret:
+      token_secret:
         description: The NetSuite Token Secret
         type: string
     steps:
-      - run: |
-          export PATH=$PATH:/home/circleci/project/node_modules/.bin
-          suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.tokenid >> --tokensecret << parameters.tokensecret >>
+      - run:
+          name: Deploying << parameters.project >>
+          command: |
+            export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
+            cd << parameters.project >>
+            suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
+            npm run sdf-deploy
+  install:
+    description: Checks out code and installs npm package
+    parameters:
+      project:
+        description: The SDF Project to install
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
+    steps:
+      - checkout
+      - node/install-packages:
+          app-dir: ./<< parameters.project >>
+          override-ci-command: npm ci --acceptsuitecloudsdklicense
+  lint:
+    description: Lint all code and save results
+    parameters:
+      project:
+        description: The SDF Project to lint
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
+    steps:
+      - run:
+          name: Linting << parameters.project >>
+          command: |
+            npm run lint-ci --prefix ./<< parameters.project >>
+      - store_artifacts:
+          path: << parameters.project >>/reports/eslint.html
+  test:
+    description: Test the SDF Project, optionally producing a code coverage report as well
+    parameters:
+      with-coverage:
+        description: |
+          Determines whether the test suite will generate a code coverage report.
+          true to generate code coverage report; false otherwise.
+        type: boolean
+        default: true
+      project:
+        description: The SDF Project to test
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
+    steps:
+      - when:
+          condition: << parameters.with-coverage >>
+          steps:
+            - run:
+                name: Unit testing << parameters.project >>
+                command: |
+                  npm run test-ci-coverage --prefix ./<< parameters.project >>
+            - store_artifacts:
+                path: << parameters.project >>/reports/coverage
+      - unless:
+          condition: << parameters.with-coverage >>
+          steps:
+            - run:
+                name: Unit Test << parameters.project >>
+                command: |
+                  npm run test-ci --prefix ./<< parameters.project >>
+      - store_test_results:
+          path: << parameters.project >>/reports/jest.xml
   validate:
     description: Validate the SDF Project
+    parameters:
+      account:
+        description: The NetSuite Account ID
+        type: enum
+        enum: [ "3751499", "3751499_SB1", "3751499_SB2" ]
+        default: "3751499_SB1"
+      project:
+        description: The SDF Project to test
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
+      token_id:
+        description: The NetSuite Token ID
+        type: string
+      token_secret:
+        description: The NetSuite Token Secret
+        type: string
     steps:
-      - run: npm run sdf-validate
+      - run:
+          name: Validating << parameters.project >>
+          command: |
+            export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
+            cd << parameters.project >>
+            suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
+            npm run sdf-validate
 executors:
   sdf:
     resource_class: small
     docker:
-      - image: cimg/openjdk:19.0-node
+      - image: cimg/openjdk:17.0-node
         environment:
           TZ: America/New_York

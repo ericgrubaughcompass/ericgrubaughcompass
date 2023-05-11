@@ -3,7 +3,6 @@
     "amd": true,
     "browser": true,
     "commonjs":true,
-    "jest": true,
     "es2019": true
   },
   "globals": {
@@ -15,7 +14,8 @@
     "google"
   ],
   "parserOptions": {
-    "requireConfigFile": false
+    "requireConfigFile": false,
+    "sourceType": "script"
   },
   "rules": {
     "quotes": [
@@ -38,14 +38,17 @@
   },
   "overrides": [
     {
-      "files": ["__tests__/**/*.js"],
-      "parserOptions": {
-        "sourceType": "module"
+      "files": ["**/__tests__/**/*.js"],
+      "env": {
+        "jest": true
       },
       "extends": [
         "plugin:jest/recommended",
         "plugin:jest/style"
-      ]
+      ],
+      "parserOptions": {
+        "sourceType": "module"
+      }
     }
   ]
 }

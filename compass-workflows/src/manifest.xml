@@ -1,4 +1,4 @@
 <manifest projecttype="ACCOUNTCUSTOMIZATION">
-  <projectname>test-sdf</projectname>
+  <projectname>compass-workflows</projectname>
   <frameworkversion>1.0</frameworkversion>
 </manifest>
