@@ -2,8 +2,8 @@
   "name": "compass-netsuite",
   "version": "0.1.0",
   "scripts": {
-    "lint": "eslint src __tests__",
-    "lint-ci": "eslint --format html --output-file reports/eslint.html",
+    "lint": "eslint src/FileCabinet/SuiteScripts __tests__",
+    "lint-ci": "eslint src/FileCabinet/SuiteScripts __tests__ --format html --output-file reports/eslint.html",
     "test": "jest",
     "test-coverage": "jest --collectCoverage=true",
     "test-ci": "jest --ci --runInBand",
