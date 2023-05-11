@@ -1,0 +1,49 @@
+# Ignored on Git Ignore
+debugger_tests/
+
+# 3rd Party Libraries
+Libraries/
+SuiteBundles/
+
+# SDF projects ignored - Need to lint these projects
+FinTranApprovals
+JEApprovalWF
+agent_statements
+callidus_qc_identifier
+employee_integration
+fin-537
+fin-548
+fin_487
+fin_508
+monofile_suitescript1_0
+netsuite_deals
+netsuite_libraries
+netsuite_pp_feed
+
+# Need to be placed in SDF project
+NS_FileCabinet/
+NS_Objects/
+
+# Individual Files
+uc_c_deal_setdealitem.js
+uc_c_deal_validations.js
+uc_deal_policy_lib.js
+uc_deal_validations_lib.js
+uc_rs_put_cce_response.js
+uc_ue_deal_document.js
+deals_suiteletScript.js
+uc_deal_c_source_deal_to_line.js
+uc_deal_c_sourcefeetype.js
+uc_deal_ue_sourcefeetype.js
+uc_ue_source_status_to_deal_children.js
+uc_SS_UE_Coupa_DynamicAcct_Project.js
+uc_SS_UE_Coupa_Employee_Sync.js
+uc_lib_coupa_oidc.js
+uc_employee.js
+uc_c_emp_changemeployeesub.js
+uc_ue_emp_changeemployeesub.js
+uc_rs_emp_createemployee.js
+uc_sl_emp_changeemployeesub.js
+# Folder for 3rd Party SuiteQl Tool files
+**/admin-tools/suiteql-tool/*.js
+
