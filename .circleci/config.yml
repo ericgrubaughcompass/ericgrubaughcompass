@@ -4,12 +4,14 @@ orbs:
 workflows:
   main:
     jobs:
-      - build
+      - build:
+          working_directory: compass
       - hold:
           type: approval
           requires:
             - build
       - deploy:
+          working_directory: compass
           requires:
             - hold
 parameters:
