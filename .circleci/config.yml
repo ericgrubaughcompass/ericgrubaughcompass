@@ -75,6 +75,8 @@ commands:
             cd << parameters.project >>
             suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
             npm run sdf-deploy
+      - store_artifacts:
+          path: << parameters.project >>/build
   install:
     description: Checks out code and installs npm package
     parameters:
