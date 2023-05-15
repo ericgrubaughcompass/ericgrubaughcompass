@@ -112,15 +112,14 @@ commands:
       - run:
           name: Configuring npm
           command: |
-            printf "_auth = $ARTIFACT_STORE_NPM_AUTH
-            email = $ARTIFACT_STORE_EMAIL
+            printf "email = $ARTIFACT_STORE_EMAIL
             always-auth = true
             registry = https://artifacts.compass-tech.net/repository/npm
-            //artifacts.compass-tech.net/repository:_auth=$ARTIFACT_STORE_NPM_AUTH
-            //artifacts.compass-tech.net/repository:_password=$ARTIFACT_STORE_NPM_PASS
-            //artifacts.compass-tech.net/repository:username=$ARTIFACT_STORE_NPM_USER
-            //artifacts.compass-tech.net/repository:email=$ARTIFACT_STORE_EMAIL
-            //artifacts.compass-tech.net/repository:always-auth=true" > ~/.npmrc
+            //artifacts.compass-tech.net/repository/:_auth=$ARTIFACT_STORE_NPM_AUTH
+            //artifacts.compass-tech.net/repository/:_password=$ARTIFACT_STORE_NPM_PASS
+            //artifacts.compass-tech.net/repository/:username=$ARTIFACT_STORE_NPM_USER
+            //artifacts.compass-tech.net/repository/:email=$ARTIFACT_STORE_EMAIL
+            //artifacts.compass-tech.net/repository/:always-auth=true" > ~/.npmrc
   test:
     description: Test the SDF Project, optionally producing a code coverage report as well
     parameters:
