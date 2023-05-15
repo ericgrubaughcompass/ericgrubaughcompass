@@ -9,7 +9,7 @@
     "test-ci": "echo Project intentionally not tested",
     "test-ci-coverage": "echo Project intentionally not tested",
     "sdf-validate": "suitecloud project:deploy --dryrun",
-    "sdf-deploy": "suitecloud project:deploy"
+    "sdf-deploy": "suitecloud project:package && suitecloud project:deploy"
   },
   "devDependencies": {
     "@oracle/suitecloud-cli": "^1"

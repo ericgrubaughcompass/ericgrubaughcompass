@@ -87,6 +87,7 @@ commands:
         default: compass
     steps:
       - checkout
+      - npm-config
       - node/install-packages:
           app-dir: ./<< parameters.project >>
           override-ci-command: npm ci --acceptsuitecloudsdklicense
@@ -105,6 +106,20 @@ commands:
             npm run lint-ci --prefix ./<< parameters.project >>
       - store_artifacts:
           path: << parameters.project >>/reports/eslint.html
+  npm-config:
+    description: Configure npm to use Nexus
+    steps:
+      - run:
+          name: Configuring npm
+          command: |
+            printf "_auth = $ARTIFACT_STORE_NPM_AUTH
+            email = $ARTIFACT_STORE_EMAIL
+            always-auth = true
+            registry = https://artifacts.compass-tech.net/repository/npm
+            //artifacts.compass-tech.net/repository:_password=$ARTIFACT_STORE_NPM_PASS
+            //artifacts.compass-tech.net/repository:username=$ARTIFACT_STORE_NPM_USER
+            //artifacts.compass-tech.net/repository:email=$ARTIFACT_STORE_EMAIL
+            //artifacts.compass-tech.net/repository:always-auth=true" > ~/.npmrc
   test:
     description: Test the SDF Project, optionally producing a code coverage report as well
     parameters:
