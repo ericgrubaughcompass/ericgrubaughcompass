@@ -4,11 +4,24 @@ orbs:
 workflows:
   main:
     jobs:
-      - build
+      - build:
+          name: build-compass
+          project: compass
+          with-coverage: true
+      - build:
+          name: build-objects
+          project: compass-objects
+          with-coverage: false
+      - build:
+          name: build-workflows
+          project: compass-workflows
+          with-coverage: true
       - hold:
           type: approval
           requires:
-            - build
+            - build-compass
+            - build-objects
+            - build-workflows
       - deploy:
           requires:
             - hold
@@ -25,26 +38,44 @@ parameters:
 jobs:
   build:
     executor: sdf
+    parameters:
+      project:
+        description: The SDF Project to build
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
+      with-coverage:
+        description: |
+          Determines whether the test suite will generate a code coverage report.
+          true to generate code coverage report; false otherwise.
+        type: boolean
+        default: true
     steps:
       - install:
-          project: compass
+          project: << parameters.project >>
       - test:
-          project: compass
-          with-coverage: true
+          project: << parameters.project >>
+          with-coverage: << parameters.with-coverage >>
       - lint:
-          project: compass
+          project: << parameters.project >>
       - validate:
           account: << pipeline.parameters.netsuite_account >>
-          project: compass
+          project: << parameters.project >>
           token_id: $SB1_TOKEN_ID
           token_secret: $SB1_TOKEN_SECRET
   deploy:
     executor: sdf
+    parameters:
+      project:
+        description: The SDF Project to deploy
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
     steps:
       - install
       - deploy:
           account: << pipeline.parameters.netsuite_account >>
-          project: compass
+          project: << parameters.project >>
           token_id: $SB1_TOKEN_ID
           token_secret: $SB1_TOKEN_SECRET
 commands:
@@ -139,7 +170,7 @@ commands:
           condition: << parameters.with-coverage >>
           steps:
             - run:
-                name: Unit testing << parameters.project >>
+                name: Unit testing << parameters.project >> with coverage
                 command: |
                   npm run test-ci-coverage --prefix ./<< parameters.project >>
             - store_artifacts:
@@ -148,7 +179,7 @@ commands:
           condition: << parameters.with-coverage >>
           steps:
             - run:
-                name: Unit Test << parameters.project >>
+                name: Unit testing << parameters.project >> without coverage
                 command: |
                   npm run test-ci --prefix ./<< parameters.project >>
       - store_test_results:
