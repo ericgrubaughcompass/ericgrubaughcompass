@@ -23,14 +23,17 @@ workflows:
             - build-objects
             - build-workflows
       - deploy:
+          name: deploy-compass
           project: compass
           requires:
             - hold
       - deploy:
+          name: deploy-objects
           project: compass-objects
           requires:
             - hold
       - deploy:
+          name: deploy-workflows
           project: compass-workflows
           requires:
             - hold
