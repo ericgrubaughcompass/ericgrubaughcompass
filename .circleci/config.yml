@@ -112,9 +112,9 @@ commands:
       - run:
           name: Configuring npm
           command: |
-            printf "email = $ARTIFACT_STORE_EMAIL
-            always-auth = true
-            registry = https://artifacts.compass-tech.net/repository/npm
+            printf "email=$ARTIFACT_STORE_EMAIL
+            always-auth=true
+            registry=https://artifacts.compass-tech.net/repository/npm
             //artifacts.compass-tech.net/repository/:_auth=$ARTIFACT_STORE_NPM_AUTH
             //artifacts.compass-tech.net/repository/:_password=$ARTIFACT_STORE_NPM_PASS
             //artifacts.compass-tech.net/repository/:username=$ARTIFACT_STORE_NPM_USER
