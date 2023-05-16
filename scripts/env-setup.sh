@@ -50,6 +50,7 @@ sdf-deploy() {
   then
     cd "$1" || return
     generate-deploy-xml $2 $3
+    # TODO update-objects
     suitecloud account:savetoken --account $4 --authid $1 --tokenid $5 --tokensecret $6
     npm run sdf-deploy
   else
