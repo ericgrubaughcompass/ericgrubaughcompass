@@ -10,6 +10,7 @@ echo "export PATH=$PATH:~/project/$1/node_modules/.bin" >> "$BASH_ENV"
 if [[ -n $(has-project-changed $1 $2 $3) ]]
 then
   cd "$1" || return
+  generate-deploy-xml $2 $3
   suitecloud account:savetoken --account $4 --authid $1 --tokenid $5 --tokensecret $6
   npm run sdf-deploy
 else

@@ -87,18 +87,33 @@ jobs:
       - install
       - deploy:
           account: << pipeline.parameters.netsuite_account >>
+          commit1: << pipeline.parameters.commit_reference >>
+          # TODO: commit2
           project: << parameters.project >>
+          # TODO: Dynamic tokens
           token_id: $SB1_TOKEN_ID
           token_secret: $SB1_TOKEN_SECRET
 commands:
   deploy:
-    description: Deploys the SDF Project
+    description: |
+      Deploys the given SDF Project to a given target account; only deploys Objects which have
+      changed between two given commit references.
     parameters:
       account:
         description: The NetSuite Account ID
         type: enum
         enum: [ "3751499", "3751499_SB1", "3751499_SB2" ]
         default: "3751499_SB1"
+      commit1:
+        description: |
+          The git commit reference to deploy. Can be any valid commit reference, e.g. a branch name,
+          a commit hash, HEAD~5, etc
+        type: string
+      commit2:
+        description: |
+          The git commit reference to use as the comparison base when detecting changes. Can be any
+          valid commit reference, e.g. a branch name, a commit hash, HEAD~5, etc
+        type: string
       project:
         description: The SDF Project to deploy
         type: enum
@@ -127,7 +142,7 @@ commands:
         default: compass
     steps:
       - checkout
-      - npm-config
+      - configure-npm
       - run: |
           source ./scripts/env-setup.sh
       - node/install-packages:
@@ -148,11 +163,11 @@ commands:
             npm run lint-ci --prefix ./<< parameters.project >>
       - store_artifacts:
           path: << parameters.project >>/reports/eslint.html
-  npm-config:
+  configure-npm:
     description: Configure npm to use Nexus
     steps:
       - run:
-          name: Configuring npm
+          name: Generate npmrc
           command: |
             printf "email=$ARTIFACT_STORE_EMAIL
             always-auth=true
