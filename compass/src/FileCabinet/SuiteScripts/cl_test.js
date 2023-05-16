@@ -190,7 +190,7 @@ define([], () => {
    * saveRecord event handler; executed after the submit button is pressed but before the form is
    * submitted.
    *
-   * @gov XXX
+   * @gov 0
    *
    * @param {Object} context
    * @param {CurrentRecord} context.currentRecord - The record in context

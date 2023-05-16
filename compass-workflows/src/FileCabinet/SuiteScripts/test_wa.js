@@ -15,7 +15,7 @@ define([], () => {
   /**
    * onAction event handler
    *
-   * @gov XXX
+   * @gov 0
    *
    * @param {Object} context
    * @param {Record} context.newRecord - The new record with all changes. save() is not permitted

@@ -114,10 +114,7 @@ commands:
       - run:
           name: Deploying << parameters.project >>
           command: |
-            export PATH=$PATH:~/project/<< parameters.project >>/node_modules/.bin
-            cd << parameters.project >>
-            suitecloud account:savetoken --account << parameters.account >> --authid << parameters.account >> --tokenid << parameters.token_id >> --tokensecret << parameters.token_secret >>
-            npm run sdf-deploy
+            sdf-deploy << parameters.project >> << parameters.commit1 >> << parameters.commit2 >> << parameters.account >> << parameters.token_id >> << parameters.token_secret >>
       - store_artifacts:
           path: << parameters.project >>/build
   install:
@@ -131,6 +128,8 @@ commands:
     steps:
       - checkout
       - npm-config
+      - run: |
+          source ./scripts/env-setup.sh
       - node/install-packages:
           app-dir: ./<< parameters.project >>
           override-ci-command: npm ci --acceptsuitecloudsdklicense
