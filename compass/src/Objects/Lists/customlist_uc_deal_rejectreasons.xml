@@ -1,0 +1,152 @@
+<customlist scriptid="customlist_uc_deal_rejectreasons">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Reject Reasons</name>
+  <customvalues>
+    <customvalue scriptid="val_deal_rejectreason_missingama">
+      <isinactive>T</isinactive>
+      <value>Missing AMA</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_novendorprofile">
+      <isinactive>T</isinactive>
+      <value>No Vendor Profile</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_other">
+      <isinactive>F</isinactive>
+      <value>Other</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_preconstruction">
+      <isinactive>T</isinactive>
+      <value>Pre-Construction</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_representemployee">
+      <isinactive>T</isinactive>
+      <value>Agents Representing Compass Employees (discount)</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_installments">
+      <isinactive>T</isinactive>
+      <value>Installments - Residential or Commercial</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_smreferral">
+      <isinactive>T</isinactive>
+      <value>Sales Manager Referral</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_compasslead">
+      <isinactive>T</isinactive>
+      <value>Compass Lead Exception</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_timing">
+      <isinactive>T</isinactive>
+      <value>Timing - Needs to get Paid Today</value>
+    </customvalue>
+    <customvalue scriptid="val_deal_rejectreason_teamemployee">
+      <isinactive>T</isinactive>
+      <value>Team with Compass employee</value>
+    </customvalue>
+    <customvalue scriptid="val_8403014_3751499_sb1_626">
+      <isinactive>F</isinactive>
+      <value>Policy Tier is incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403016_3751499_sb1_443">
+      <isinactive>F</isinactive>
+      <value>Incentive is incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403015_3751499_sb1_901">
+      <isinactive>F</isinactive>
+      <value>Team GCI Incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403013_3751499_sb1_786">
+      <isinactive>F</isinactive>
+      <value>Base Split is incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403017_3751499_sb1_242">
+      <isinactive>F</isinactive>
+      <value>TCI is incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403018_3751499_sb1_964">
+      <isinactive>F</isinactive>
+      <value>TCI Calculated Incorrectly</value>
+    </customvalue>
+    <customvalue scriptid="val_8403019_3751499_sb1_397">
+      <isinactive>F</isinactive>
+      <value>Personal Transaction</value>
+    </customvalue>
+    <customvalue scriptid="val_8403020_3751499_sb1_154">
+      <isinactive>F</isinactive>
+      <value>Separated Agent</value>
+    </customvalue>
+    <customvalue scriptid="val_8403021_3751499_sb1_880">
+      <isinactive>F</isinactive>
+      <value>Lost Commissions</value>
+    </customvalue>
+    <customvalue scriptid="val_8403022_3751499_sb1_719">
+      <isinactive>F</isinactive>
+      <value>E&amp;O per Transaction</value>
+    </customvalue>
+    <customvalue scriptid="val_8403023_3751499_sb1_508">
+      <isinactive>F</isinactive>
+      <value>Incentive Split Override</value>
+    </customvalue>
+    <customvalue scriptid="val_8403024_3751499_sb1_998">
+      <isinactive>F</isinactive>
+      <value>Base Split Override is incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403025_3751499_sb1_345">
+      <isinactive>F</isinactive>
+      <value>Sales Manager Override</value>
+    </customvalue>
+    <customvalue scriptid="val_8403026_3751499_sb1_578">
+      <isinactive>F</isinactive>
+      <value>Broker Account Split Override is incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403027_3751499_sb1_515">
+      <isinactive>F</isinactive>
+      <value>Fee Calculated is incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403028_3751499_sb1_740">
+      <isinactive>F</isinactive>
+      <value>Referral Fee is incorrect</value>
+    </customvalue>
+    <customvalue scriptid="val_8403029_3751499_sb1_586">
+      <isinactive>F</isinactive>
+      <value>Incorrect Accounting Mapping</value>
+    </customvalue>
+    <customvalue scriptid="val_8403030_3751499_sb1_105">
+      <isinactive>F</isinactive>
+      <value>Incorrect AMA or Team</value>
+    </customvalue>
+    <customvalue scriptid="val_8403031_3751499_sb1_283">
+      <isinactive>F</isinactive>
+      <value>User Error</value>
+    </customvalue>
+    <customvalue scriptid="val_8403032_3751499_sb1_224">
+      <isinactive>F</isinactive>
+      <value>Void / Duplicate Deal</value>
+    </customvalue>
+    <customvalue scriptid="val_8403033_3751499_sb1_235">
+      <isinactive>F</isinactive>
+      <value>CCE unresponsive</value>
+    </customvalue>
+    <customvalue scriptid="val_8403034_3751499_sb1_554">
+      <isinactive>F</isinactive>
+      <value>Non-standard ICA</value>
+    </customvalue>
+    <customvalue scriptid="val_8403035_3751499_sb1_235">
+      <isinactive>F</isinactive>
+      <value>Pending W9</value>
+    </customvalue>
+    <customvalue scriptid="val_8403036_3751499_sb1_380">
+      <isinactive>F</isinactive>
+      <value>Invalid AMA/Vendor Profile</value>
+    </customvalue>
+    <customvalue scriptid="val_10799283_3751499_749">
+      <isinactive>T</isinactive>
+      <value>Unsupported by CCE</value>
+    </customvalue>
+    <customvalue scriptid="val_17606442_3751499_122">
+      <isinactive>F</isinactive>
+      <value>Non-Standard Deal</value>
+    </customvalue>
+  </customvalues>
+</customlist>

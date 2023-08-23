@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_uc_reasons_for_outreach">
+  <description>Reasons for Third Party outreach on Deal record</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Reasons for Outreach</name>
+  <customvalues>
+    <customvalue scriptid="val_623325_3751499_sb1_175">
+      <isinactive>F</isinactive>
+      <value>Deal Level Data Missing</value>
+    </customvalue>
+    <customvalue scriptid="val_623327_3751499_sb1_668">
+      <isinactive>F</isinactive>
+      <value>Fees/Concessions/Taxes Information Missing</value>
+    </customvalue>
+    <customvalue scriptid="val_643670_3751499_sb1_139">
+      <isinactive>F</isinactive>
+      <value>No Override Split % Provided</value>
+    </customvalue>
+    <customvalue scriptid="val_623326_3751499_sb1_227">
+      <isinactive>F</isinactive>
+      <value>Agent Allocation Information Missing</value>
+    </customvalue>
+  </customvalues>
+</customlist>

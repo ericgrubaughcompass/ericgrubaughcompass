@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_com_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Commission Response Status</name>
+  <customvalues>
+    <customvalue scriptid="val_4277215_3751499_sb1_840">
+      <isinactive>F</isinactive>
+      <value>Success</value>
+    </customvalue>
+    <customvalue scriptid="val_4277216_3751499_sb1_968">
+      <isinactive>F</isinactive>
+      <value>Error</value>
+    </customvalue>
+  </customvalues>
+</customlist>

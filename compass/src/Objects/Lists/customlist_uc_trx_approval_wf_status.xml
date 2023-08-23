@@ -1,0 +1,40 @@
+<customlist scriptid="customlist_uc_trx_approval_wf_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Transaction Approval WF Status</name>
+  <customvalues>
+    <customvalue scriptid="val_15118566_3751499_sb1_517">
+      <isinactive>F</isinactive>
+      <value>Draft</value>
+    </customvalue>
+    <customvalue scriptid="val_15118567_3751499_sb1_878">
+      <isinactive>F</isinactive>
+      <value>Pending Approval</value>
+    </customvalue>
+    <customvalue scriptid="val_15118568_3751499_sb1_472">
+      <isinactive>F</isinactive>
+      <value>Rejected</value>
+    </customvalue>
+    <customvalue scriptid="val_15118569_3751499_sb1_824">
+      <isinactive>T</isinactive>
+      <value>Cancelled</value>
+    </customvalue>
+    <customvalue scriptid="val_15118570_3751499_sb1_102">
+      <isinactive>T</isinactive>
+      <value>Approved</value>
+    </customvalue>
+    <customvalue scriptid="val_17879289_3751499_sb1_213">
+      <isinactive>T</isinactive>
+      <value>Closed</value>
+    </customvalue>
+    <customvalue scriptid="val_18635672_3751499_sb2_505">
+      <isinactive>F</isinactive>
+      <value>Initiation</value>
+    </customvalue>
+    <customvalue scriptid="val_17905874_3751499_sb1_996">
+      <isinactive>T</isinactive>
+      <value>Voided</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,76 @@
+<customlist scriptid="customlist_split_override_reasons">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <name>Split Override Reasons</name>
+  <customvalues>
+    <customvalue scriptid="val_8406205_3751499_sb1_311">
+      <isinactive>T</isinactive>
+      <value>Compass Lead (NOT usual 50% split)</value>
+    </customvalue>
+    <customvalue scriptid="val_10721926_3751499_650">
+      <isinactive>T</isinactive>
+      <value>Compass Lead (NOT usual 50% split)</value>
+    </customvalue>
+    <customvalue scriptid="val_8406206_3751499_sb1_206">
+      <isinactive>T</isinactive>
+      <value>Data Quality Override</value>
+    </customvalue>
+    <customvalue scriptid="val_10721927_3751499_568">
+      <isinactive>T</isinactive>
+      <value>Data Quality Override</value>
+    </customvalue>
+    <customvalue scriptid="val_15118517_3751499_sb1_204">
+      <isinactive>F</isinactive>
+      <value>Exception: Expired / Overdue ICA - pay at old ICA</value>
+    </customvalue>
+    <customvalue scriptid="val_15118516_3751499_sb1_755">
+      <isinactive>F</isinactive>
+      <value>Exception: Pay above ICA/Policy</value>
+    </customvalue>
+    <customvalue scriptid="val_10721929_3751499_435">
+      <isinactive>T</isinactive>
+      <value>Other</value>
+    </customvalue>
+    <customvalue scriptid="val_8406208_3751499_sb1_326">
+      <isinactive>T</isinactive>
+      <value>Other</value>
+    </customvalue>
+    <customvalue scriptid="val_15118519_3751499_sb1_486">
+      <isinactive>F</isinactive>
+      <value>Override: Compass Lead</value>
+    </customvalue>
+    <customvalue scriptid="val_15118518_3751499_sb1_676">
+      <isinactive>F</isinactive>
+      <value>Override: Incorrect ICA terms in SFDC</value>
+    </customvalue>
+    <customvalue scriptid="val_15118520_3751499_sb1_736">
+      <isinactive>F</isinactive>
+      <value>Override: Per ICA Incentive (PPT/TCI)</value>
+    </customvalue>
+    <customvalue scriptid="val_10721925_3751499_663">
+      <isinactive>T</isinactive>
+      <value>Personal Transaction</value>
+    </customvalue>
+    <customvalue scriptid="val_8406204_3751499_sb1_348">
+      <isinactive>T</isinactive>
+      <value>Personal Transaction</value>
+    </customvalue>
+    <customvalue scriptid="val_8406203_3751499_sb1_747">
+      <isinactive>T</isinactive>
+      <value>Transaction Count Incentive (NOT valid ICA data)</value>
+    </customvalue>
+    <customvalue scriptid="val_10721924_3751499_655">
+      <isinactive>T</isinactive>
+      <value>Transaction Count Incentive (Not Valid ICA data)</value>
+    </customvalue>
+    <customvalue scriptid="val_8406207_3751499_sb1_697">
+      <isinactive>T</isinactive>
+      <value>Unsupported Deal</value>
+    </customvalue>
+    <customvalue scriptid="val_10721928_3751499_878">
+      <isinactive>T</isinactive>
+      <value>Unsupported Deal</value>
+    </customvalue>
+  </customvalues>
+</customlist>

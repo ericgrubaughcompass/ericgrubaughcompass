@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_deal_side_represented">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Side Represented</name>
+  <customvalues>
+    <customvalue scriptid="val_537489_3751499_365">
+      <isinactive>F</isinactive>
+      <value>Seller/Landlord</value>
+    </customvalue>
+    <customvalue scriptid="val_537490_3751499_418">
+      <isinactive>F</isinactive>
+      <value>Buyer/Tenant</value>
+    </customvalue>
+  </customvalues>
+</customlist>

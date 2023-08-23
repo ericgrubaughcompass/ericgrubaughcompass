@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_uc_integration_status">
+  <description>This Status is used to track the status for records that are created and processed via an integration.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Integration Status</name>
+  <customvalues>
+    <customvalue scriptid="val_26941398_3751499_sb1_401">
+      <isinactive>F</isinactive>
+      <value>Pending</value>
+    </customvalue>
+    <customvalue scriptid="val_26941399_3751499_sb1_100">
+      <isinactive>F</isinactive>
+      <value>Processing</value>
+    </customvalue>
+    <customvalue scriptid="val_26941400_3751499_sb1_838">
+      <isinactive>F</isinactive>
+      <value>Complete</value>
+    </customvalue>
+    <customvalue scriptid="val_26941401_3751499_sb1_648">
+      <isinactive>F</isinactive>
+      <value>Error</value>
+    </customvalue>
+    <customvalue scriptid="val_28560277_3751499_sb2_397">
+      <isinactive>F</isinactive>
+      <value>Ignore</value>
+    </customvalue>
+  </customvalues>
+</customlist>

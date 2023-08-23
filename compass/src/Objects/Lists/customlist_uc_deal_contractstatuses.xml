@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_uc_deal_contractstatuses">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Contract Status List</name>
+  <customvalues>
+    <customvalue scriptid="val_1489648_3751499_sb1_394">
+      <isinactive>F</isinactive>
+      <value>Closed</value>
+    </customvalue>
+    <customvalue scriptid="val_1489650_3751499_sb1_490">
+      <isinactive>F</isinactive>
+      <value>Cancelled</value>
+    </customvalue>
+    <customvalue scriptid="val_1489649_3751499_sb1_419">
+      <isinactive>F</isinactive>
+      <value>Open</value>
+    </customvalue>
+  </customvalues>
+</customlist>

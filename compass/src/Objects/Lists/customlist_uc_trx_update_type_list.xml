@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_uc_trx_update_type_list">
+  <description>The Fund Update Type indicates the type of Fund Transaction Request to process.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Fund Update Type</name>
+  <customvalues>
+    <customvalue scriptid="val_36441478_3751499_sb1_591">
+      <isinactive>F</isinactive>
+      <value>Create</value>
+    </customvalue>
+    <customvalue scriptid="val_36441479_3751499_sb1_802">
+      <isinactive>F</isinactive>
+      <value>Transfer</value>
+    </customvalue>
+    <customvalue scriptid="val_35412501_3751499_sb2_838">
+      <isinactive>F</isinactive>
+      <value>Bounce</value>
+    </customvalue>
+  </customvalues>
+</customlist>

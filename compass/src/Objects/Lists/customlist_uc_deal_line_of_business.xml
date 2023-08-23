@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_deal_line_of_business">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Line of Business</name>
+  <customvalues>
+    <customvalue scriptid="val_537485_3751499_285">
+      <isinactive>F</isinactive>
+      <value>Brokerage</value>
+    </customvalue>
+    <customvalue scriptid="val_537486_3751499_310">
+      <isinactive>F</isinactive>
+      <value>New Development</value>
+    </customvalue>
+  </customvalues>
+</customlist>

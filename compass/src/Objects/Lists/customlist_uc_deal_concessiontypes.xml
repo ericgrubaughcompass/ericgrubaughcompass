@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_deal_concessiontypes">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Concession Types</name>
+  <customvalues>
+    <customvalue scriptid="value_1_3751499_apprconcession">
+      <isinactive>F</isinactive>
+      <value>Approved Concession</value>
+    </customvalue>
+    <customvalue scriptid="value_2_3751499_unapprconcession">
+      <isinactive>F</isinactive>
+      <value>Unapproved Concession</value>
+    </customvalue>
+  </customvalues>
+</customlist>

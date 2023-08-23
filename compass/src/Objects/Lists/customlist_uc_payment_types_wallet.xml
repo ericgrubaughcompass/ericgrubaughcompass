@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_payment_types_wallet">
+  <description>Based on the item types used in transactions, this field will set with a payment type for the getInvoice response.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Payment Types (Compass Wallet)</name>
+  <customvalues>
+    <customvalue scriptid="val_43284007_3751499_sb1_152">
+      <isinactive>F</isinactive>
+      <value>WAIVED</value>
+    </customvalue>
+    <customvalue scriptid="val_43284008_3751499_sb1_594">
+      <isinactive>F</isinactive>
+      <value>DEFERRED</value>
+    </customvalue>
+  </customvalues>
+</customlist>

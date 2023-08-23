@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_uc_deal_dealtypes">
+  <description>List of deal types used to route the deal record.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Types</name>
+  <customvalues>
+    <customvalue scriptid="val_643241_3751499_sb1_472">
+      <isinactive>F</isinactive>
+      <value>Standard Deal</value>
+    </customvalue>
+    <customvalue scriptid="val_643243_3751499_sb1_539">
+      <isinactive>F</isinactive>
+      <value>Post Sale Adjustment</value>
+    </customvalue>
+    <customvalue scriptid="val_643244_3751499_sb1_738">
+      <isinactive>F</isinactive>
+      <value>Clawback</value>
+    </customvalue>
+    <customvalue scriptid="val_643242_3751499_sb1_672">
+      <isinactive>F</isinactive>
+      <value>Non Standard Deal</value>
+    </customvalue>
+  </customvalues>
+</customlist>

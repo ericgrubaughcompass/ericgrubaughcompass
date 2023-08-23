@@ -1,0 +1,56 @@
+<customlist scriptid="customlist_uc_deal_fee_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Fee Type</name>
+  <customvalues>
+    <customvalue scriptid="val_1188211_3751499_830">
+      <isinactive>F</isinactive>
+      <value>After the Top</value>
+    </customvalue>
+    <customvalue scriptid="val_537482_3751499_920">
+      <isinactive>F</isinactive>
+      <value>Agent Only</value>
+    </customvalue>
+    <customvalue scriptid="val_11845488_3751499_253">
+      <isinactive>F</isinactive>
+      <value>Brokerage Only - Compass Payable</value>
+    </customvalue>
+    <customvalue scriptid="val_538036_3751499_672">
+      <isinactive>F</isinactive>
+      <value>Compass Only</value>
+    </customvalue>
+    <customvalue scriptid="val_678493_3751499_sb1_177">
+      <isinactive>F</isinactive>
+      <value>Off the Sale</value>
+    </customvalue>
+    <customvalue scriptid="val_1188212_3751499_386">
+      <isinactive>F</isinactive>
+      <value>Onto the Net</value>
+    </customvalue>
+    <customvalue scriptid="val_8433020_3751499_sb1_922">
+      <isinactive>F</isinactive>
+      <value>Pass Through Collecting From Agent</value>
+    </customvalue>
+    <customvalue scriptid="val_8433021_3751499_sb1_389">
+      <isinactive>F</isinactive>
+      <value>Pass Through To Agent</value>
+    </customvalue>
+    <customvalue scriptid="val_8432955_3751499_sb1_934">
+      <isinactive>F</isinactive>
+      <value>Pass Through to Third Party</value>
+    </customvalue>
+    <customvalue scriptid="val_537481_3751499_216">
+      <isinactive>F</isinactive>
+      <value>Prior to split between Compass and Agent</value>
+    </customvalue>
+    <customvalue scriptid="val_3751499_feetype_generalexcisetax">
+      <isinactive>F</isinactive>
+      <value>General Excise Tax</value>
+    </customvalue>
+    <customvalue scriptid="val_3751499_feetype_approvedconcession">
+      <isinactive>F</isinactive>
+      <value>Approved Concession</value>
+    </customvalue>
+  </customvalues>
+</customlist>

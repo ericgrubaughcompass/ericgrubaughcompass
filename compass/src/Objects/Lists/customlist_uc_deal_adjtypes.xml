@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_deal_adjtypes">
+  <description>Types of deal adjustments</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Adjustment Types</name>
+  <customvalues>
+    <customvalue scriptid="val_641107_3751499_sb1_539">
+      <isinactive>F</isinactive>
+      <value>Compass to Agent Payment</value>
+    </customvalue>
+    <customvalue scriptid="val_641108_3751499_sb1_791">
+      <isinactive>F</isinactive>
+      <value>Agent to Compass Payment</value>
+    </customvalue>
+  </customvalues>
+</customlist>

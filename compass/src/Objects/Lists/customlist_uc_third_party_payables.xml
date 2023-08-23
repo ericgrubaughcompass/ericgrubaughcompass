@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_third_party_payables">
+  <description>List of third party types that receive or are charged payment</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Third Party Payables</name>
+  <customvalues>
+    <customvalue scriptid="val_626218_3751499_sb1_150">
+      <isinactive>F</isinactive>
+      <value>Agent</value>
+    </customvalue>
+    <customvalue scriptid="val_626219_3751499_sb1_531">
+      <isinactive>F</isinactive>
+      <value>Client</value>
+    </customvalue>
+  </customvalues>
+</customlist>

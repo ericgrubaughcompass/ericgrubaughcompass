@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_uc_approval_level">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Approval Hierarchy Level</name>
+  <customvalues>
+    <customvalue scriptid="val_8423031_3751499_sb1_447">
+      <isinactive>F</isinactive>
+      <value>Level 1</value>
+    </customvalue>
+    <customvalue scriptid="val_8423032_3751499_sb1_358">
+      <isinactive>F</isinactive>
+      <value>Level 2</value>
+    </customvalue>
+    <customvalue scriptid="val_8423033_3751499_sb1_239">
+      <isinactive>F</isinactive>
+      <value>Level 3</value>
+    </customvalue>
+  </customvalues>
+</customlist>

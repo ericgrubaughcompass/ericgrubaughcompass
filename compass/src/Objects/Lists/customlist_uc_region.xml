@@ -1,0 +1,172 @@
+<customlist scriptid="customlist_uc_region">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <name>Region</name>
+  <customvalues>
+    <customvalue scriptid="val_8423896_3751499_sb1_754">
+      <isinactive>F</isinactive>
+      <value>Baltimore</value>
+    </customvalue>
+    <customvalue scriptid="val_34573055_3751499_608">
+      <isinactive>F</isinactive>
+      <value>Coastal New England</value>
+    </customvalue>
+    <customvalue scriptid="val_8423897_3751499_sb1_725">
+      <isinactive>F</isinactive>
+      <value>Colorado</value>
+    </customvalue>
+    <customvalue scriptid="val_18634854_3751499_sb2_659">
+      <isinactive>F</isinactive>
+      <value>Connecticut</value>
+    </customvalue>
+    <customvalue scriptid="val_18636144_3751499_sb2_356">
+      <isinactive>F</isinactive>
+      <value>Delaware</value>
+    </customvalue>
+    <customvalue scriptid="val_8423898_3751499_sb1_189">
+      <isinactive>F</isinactive>
+      <value>Florida</value>
+    </customvalue>
+    <customvalue scriptid="val_8423899_3751499_sb1_338">
+      <isinactive>F</isinactive>
+      <value>Greater Atlanta Area</value>
+    </customvalue>
+    <customvalue scriptid="val_8423900_3751499_sb1_557">
+      <isinactive>F</isinactive>
+      <value>Greater Austin Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18645826_3751499_sb2_323">
+      <isinactive>F</isinactive>
+      <value>Greater Charlotte Area</value>
+    </customvalue>
+    <customvalue scriptid="val_8423901_3751499_sb1_854">
+      <isinactive>F</isinactive>
+      <value>Greater Dallas</value>
+    </customvalue>
+    <customvalue scriptid="val_8423902_3751499_sb1_116">
+      <isinactive>F</isinactive>
+      <value>Greater Houston Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18645827_3751499_sb2_328">
+      <isinactive>F</isinactive>
+      <value>Greater Indianapolis Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18645828_3751499_sb2_441">
+      <isinactive>F</isinactive>
+      <value>Greater Kansas City Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18645829_3751499_sb2_170">
+      <isinactive>F</isinactive>
+      <value>Greater Milwaukee Area</value>
+    </customvalue>
+    <customvalue scriptid="val_8423903_3751499_sb1_424">
+      <isinactive>F</isinactive>
+      <value>Greater Nashville Area</value>
+    </customvalue>
+    <customvalue scriptid="val_8423904_3751499_sb1_429">
+      <isinactive>F</isinactive>
+      <value>Greater Philadelphia Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18645838_3751499_sb2_144">
+      <isinactive>F</isinactive>
+      <value>Greater Pittsburgh Area</value>
+    </customvalue>
+    <customvalue scriptid="val_33215769_3751499_427">
+      <isinactive>F</isinactive>
+      <value>Greater Richmond Area</value>
+    </customvalue>
+    <customvalue scriptid="val_27938702_3751499_989">
+      <isinactive>F</isinactive>
+      <value>Greater Sacramento</value>
+    </customvalue>
+    <customvalue scriptid="val_8423905_3751499_sb1_679">
+      <isinactive>F</isinactive>
+      <value>Greater San Diego</value>
+    </customvalue>
+    <customvalue scriptid="val_8423906_3751499_sb1_623">
+      <isinactive>F</isinactive>
+      <value>Greater Seattle Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18645830_3751499_sb2_591">
+      <isinactive>F</isinactive>
+      <value>Greater St. Louis Area</value>
+    </customvalue>
+    <customvalue scriptid="val_8423907_3751499_sb1_893">
+      <isinactive>F</isinactive>
+      <value>Hawaii</value>
+    </customvalue>
+    <customvalue scriptid="val_18645831_3751499_sb2_697">
+      <isinactive>F</isinactive>
+      <value>Idaho</value>
+    </customvalue>
+    <customvalue scriptid="val_18635297_3751499_sb2_595">
+      <isinactive>F</isinactive>
+      <value>Long Island</value>
+    </customvalue>
+    <customvalue scriptid="val_8423908_3751499_sb1_157">
+      <isinactive>F</isinactive>
+      <value>Midwest</value>
+    </customvalue>
+    <customvalue scriptid="val_18645832_3751499_sb2_878">
+      <isinactive>F</isinactive>
+      <value>Minneapolis-St. Paul</value>
+    </customvalue>
+    <customvalue scriptid="val_24862709_3751499_250">
+      <isinactive>F</isinactive>
+      <value>New Development</value>
+    </customvalue>
+    <customvalue scriptid="val_8423909_3751499_sb1_294">
+      <isinactive>F</isinactive>
+      <value>New England</value>
+    </customvalue>
+    <customvalue scriptid="val_18645836_3751499_sb2_790">
+      <isinactive>F</isinactive>
+      <value>New York City</value>
+    </customvalue>
+    <customvalue scriptid="val_8423910_3751499_sb1_664">
+      <isinactive>F</isinactive>
+      <value>New York Metro Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18635291_3751499_sb2_546">
+      <isinactive>F</isinactive>
+      <value>North New Jersey</value>
+    </customvalue>
+    <customvalue scriptid="val_18645833_3751499_sb2_278">
+      <isinactive>F</isinactive>
+      <value>Raleigh-Durham Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18645834_3751499_sb2_713">
+      <isinactive>F</isinactive>
+      <value>Rhode Island</value>
+    </customvalue>
+    <customvalue scriptid="val_8423911_3751499_sb1_374">
+      <isinactive>F</isinactive>
+      <value>San Francisco Bay Area</value>
+    </customvalue>
+    <customvalue scriptid="val_8423912_3751499_sb1_702">
+      <isinactive>F</isinactive>
+      <value>South Florida</value>
+    </customvalue>
+    <customvalue scriptid="val_8423913_3751499_sb1_995">
+      <isinactive>F</isinactive>
+      <value>Southern California</value>
+    </customvalue>
+    <customvalue scriptid="val_8423914_3751499_sb1_422">
+      <isinactive>F</isinactive>
+      <value>The Hamptons</value>
+    </customvalue>
+    <customvalue scriptid="val_8423915_3751499_sb1_337">
+      <isinactive>F</isinactive>
+      <value>Washington, DC Area</value>
+    </customvalue>
+    <customvalue scriptid="val_18635295_3751499_sb2_891">
+      <isinactive>F</isinactive>
+      <value>Westchester</value>
+    </customvalue>
+    <customvalue scriptid="val_18645837_3751499_sb2_223">
+      <isinactive>F</isinactive>
+      <value>Wyoming</value>
+    </customvalue>
+  </customvalues>
+</customlist>

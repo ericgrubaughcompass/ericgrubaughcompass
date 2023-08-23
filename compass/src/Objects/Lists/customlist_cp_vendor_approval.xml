@@ -1,0 +1,32 @@
+<customlist scriptid="customlist_cp_vendor_approval">
+  <description>Compass-Vendor Approval - List of Approval Statuses</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Compass Vendor Approval</name>
+  <customvalues>
+    <customvalue scriptid="val_166787_3751499_695">
+      <isinactive>F</isinactive>
+      <value>Pending Approval</value>
+    </customvalue>
+    <customvalue scriptid="val_166788_3751499_868">
+      <isinactive>F</isinactive>
+      <value>Approval Rejected</value>
+    </customvalue>
+    <customvalue scriptid="val_166789_3751499_938">
+      <isinactive>F</isinactive>
+      <value>Approved</value>
+    </customvalue>
+    <customvalue scriptid="val_166790_3751499_253">
+      <isinactive>F</isinactive>
+      <value>Payment Hold</value>
+    </customvalue>
+    <customvalue scriptid="val_675412_3751499_sb1_665">
+      <isinactive>F</isinactive>
+      <value>Pending W-9</value>
+    </customvalue>
+    <customvalue scriptid="val_674372_3751499_sb1_720">
+      <isinactive>F</isinactive>
+      <value>Pending Agent ID</value>
+    </customvalue>
+  </customvalues>
+</customlist>

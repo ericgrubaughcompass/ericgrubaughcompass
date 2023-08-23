@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_apr_paymenttypes">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>UC APR Payment Types</name>
+  <customvalues>
+    <customvalue scriptid="val_2225290_3751499_sb1_343">
+      <isinactive>F</isinactive>
+      <value>Avid</value>
+    </customvalue>
+    <customvalue scriptid="val_2225291_3751499_sb1_396">
+      <isinactive>F</isinactive>
+      <value>JPM</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_uc_transaction_subtypes">
+  <description>This list will be used in approval hierarchy records to specify the transaction type and subtype to which a record applies.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Transaction Subtype for WF </name>
+  <customvalues>
+    <customvalue scriptid="val_8429307_3751499_sb1_165">
+      <isinactive>F</isinactive>
+      <value>Deal Transactions</value>
+    </customvalue>
+    <customvalue scriptid="val_15112855_3751499_sb1_178">
+      <isinactive>F</isinactive>
+      <value>Manual Journal Entry</value>
+    </customvalue>
+    <customvalue scriptid="val_17900596_3751499_sb1_519">
+      <isinactive>F</isinactive>
+      <value>Accounting Approval</value>
+    </customvalue>
+    <customvalue scriptid="val_38451445_3751499_527">
+      <isinactive>F</isinactive>
+      <value>Simple Legal Transactions</value>
+    </customvalue>
+    <customvalue scriptid="val_38451446_3751499_387">
+      <isinactive>F</isinactive>
+      <value>Non-Deal Transactions</value>
+    </customvalue>
+  </customvalues>
+</customlist>

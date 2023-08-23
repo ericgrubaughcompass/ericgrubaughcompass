@@ -1,0 +1,52 @@
+<customlist scriptid="customlist_expected_fail_category">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Expected Fail Category</name>
+  <customvalues>
+    <customvalue scriptid="val_542273_3751499_sb1_915">
+      <isinactive>F</isinactive>
+      <value>Lost Commission</value>
+    </customvalue>
+    <customvalue scriptid="val_542280_3751499_sb1_822">
+      <isinactive>F</isinactive>
+      <value>Earnest Money (Chicago Only)</value>
+    </customvalue>
+    <customvalue scriptid="val_542279_3751499_sb1_672">
+      <isinactive>F</isinactive>
+      <value>Deal with Owner&apos;s Pay (NY Only)</value>
+    </customvalue>
+    <customvalue scriptid="val_542281_3751499_sb1_422">
+      <isinactive>F</isinactive>
+      <value>Compass Lead Exception</value>
+    </customvalue>
+    <customvalue scriptid="val_542277_3751499_sb1_446">
+      <isinactive>F</isinactive>
+      <value>Referral received from external brokerage</value>
+    </customvalue>
+    <customvalue scriptid="val_542278_3751499_sb1_225">
+      <isinactive>F</isinactive>
+      <value>Listing Fee (Hamptons only)</value>
+    </customvalue>
+    <customvalue scriptid="val_542282_3751499_sb1_669">
+      <isinactive>F</isinactive>
+      <value>Clawback</value>
+    </customvalue>
+    <customvalue scriptid="val_542283_3751499_sb1_730">
+      <isinactive>F</isinactive>
+      <value>Colorado Installments (Colorado Only)</value>
+    </customvalue>
+    <customvalue scriptid="val_542275_3751499_sb1_723">
+      <isinactive>F</isinactive>
+      <value>Bonus Adjustment</value>
+    </customvalue>
+    <customvalue scriptid="val_542276_3751499_sb1_987">
+      <isinactive>F</isinactive>
+      <value>Personal Transaction</value>
+    </customvalue>
+    <customvalue scriptid="val_542274_3751499_sb1_964">
+      <isinactive>F</isinactive>
+      <value>Errors &amp; Ommissions</value>
+    </customvalue>
+  </customvalues>
+</customlist>

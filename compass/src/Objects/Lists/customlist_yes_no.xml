@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_yes_no">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Yes/No</name>
+  <customvalues>
+    <customvalue scriptid="val_542268_3751499_sb1_711">
+      <isinactive>F</isinactive>
+      <value>Yes</value>
+    </customvalue>
+    <customvalue scriptid="val_542269_3751499_sb1_373">
+      <isinactive>F</isinactive>
+      <value>No</value>
+    </customvalue>
+  </customvalues>
+</customlist>

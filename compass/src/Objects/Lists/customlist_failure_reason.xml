@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_failure_reason">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Failure Reason</name>
+  <customvalues>
+    <customvalue scriptid="val_542288_3751499_sb1_239">
+      <isinactive>F</isinactive>
+      <value>NS form filled out Incorrectly</value>
+    </customvalue>
+    <customvalue scriptid="val_542872_3751499_sb1_381">
+      <isinactive>F</isinactive>
+      <value>Other</value>
+    </customvalue>
+    <customvalue scriptid="val_542289_3751499_sb1_699">
+      <isinactive>F</isinactive>
+      <value>Manual calculation error</value>
+    </customvalue>
+  </customvalues>
+</customlist>

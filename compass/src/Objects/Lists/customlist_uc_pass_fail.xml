@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_pass_fail">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Pass/Fail</name>
+  <customvalues>
+    <customvalue scriptid="val_542262_3751499_sb1_887">
+      <isinactive>F</isinactive>
+      <value>Pass</value>
+    </customvalue>
+    <customvalue scriptid="val_542263_3751499_sb1_878">
+      <isinactive>F</isinactive>
+      <value>Fail</value>
+    </customvalue>
+  </customvalues>
+</customlist>

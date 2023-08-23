@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_deal_referraltypes">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Referral Types</name>
+  <customvalues>
+    <customvalue scriptid="value_1_3751499_internalref">
+      <isinactive>F</isinactive>
+      <value>Internal Referral</value>
+    </customvalue>
+    <customvalue scriptid="value_2_3751499_externalref">
+      <isinactive>F</isinactive>
+      <value>External Referral</value>
+    </customvalue>
+  </customvalues>
+</customlist>

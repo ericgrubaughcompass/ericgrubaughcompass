@@ -1,0 +1,68 @@
+<customlist scriptid="customlist_uc_deal">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Status List</name>
+  <customvalues>
+    <customvalue scriptid="val_537496_3751499_679">
+      <isinactive>F</isinactive>
+      <value>Draft</value>
+    </customvalue>
+    <customvalue scriptid="val_537497_3751499_543">
+      <isinactive>F</isinactive>
+      <value>Claimed</value>
+    </customvalue>
+    <customvalue scriptid="val_1821616_3751499_sb1_612">
+      <isinactive>F</isinactive>
+      <value>On Hold</value>
+    </customvalue>
+    <customvalue scriptid="val_538843_3751499_406">
+      <isinactive>F</isinactive>
+      <value>Void</value>
+    </customvalue>
+    <customvalue scriptid="val_542402_3751499_sb1_207">
+      <isinactive>T</isinactive>
+      <value>Quality Control</value>
+    </customvalue>
+    <customvalue scriptid="val_1662040_3751499_818">
+      <isinactive>F</isinactive>
+      <value>Pending CDA Approval</value>
+    </customvalue>
+    <customvalue scriptid="val_537500_3751499_679">
+      <isinactive>F</isinactive>
+      <value>Flagged for Agent Finance Review</value>
+    </customvalue>
+    <customvalue scriptid="val_629659_3751499_sb1_162">
+      <isinactive>F</isinactive>
+      <value>Ready for Callidus</value>
+    </customvalue>
+    <customvalue scriptid="val_672109_3751499_617">
+      <isinactive>F</isinactive>
+      <value>Submitted to Callidus Process Queue</value>
+    </customvalue>
+    <customvalue scriptid="val_1496072_3751499_290">
+      <isinactive>F</isinactive>
+      <value>Pending Transaction Import</value>
+    </customvalue>
+    <customvalue scriptid="val_1496073_3751499_964">
+      <isinactive>F</isinactive>
+      <value>Ready for QC Automation</value>
+    </customvalue>
+    <customvalue scriptid="val_537498_3751499_730">
+      <isinactive>T</isinactive>
+      <value>Submitted For Approval</value>
+    </customvalue>
+    <customvalue scriptid="val_537499_3751499_814">
+      <isinactive>F</isinactive>
+      <value>Submitted</value>
+    </customvalue>
+    <customvalue scriptid="val_7829428_3751499_sb1_672">
+      <isinactive>T</isinactive>
+      <value>Ready for Commission Calc</value>
+    </customvalue>
+    <customvalue scriptid="val_8394931_3751499_sb1_145">
+      <isinactive>F</isinactive>
+      <value>Ready for GL Calculation</value>
+    </customvalue>
+  </customvalues>
+</customlist>

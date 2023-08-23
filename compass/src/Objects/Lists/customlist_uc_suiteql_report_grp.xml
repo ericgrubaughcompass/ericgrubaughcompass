@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_suiteql_report_grp">
+  <description>List for specifying report group for suiteQL query application interface reporting tool.</description>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <name>SuiteQL Report  Group</name>
+  <customvalues>
+    <customvalue scriptid="val_41223722_3751499_sb1_999">
+      <isinactive>F</isinactive>
+      <value>AP TRADE</value>
+    </customvalue>
+    <customvalue scriptid="val_41223723_3751499_sb1_388">
+      <isinactive>F</isinactive>
+      <value>Payment Cash Distribution</value>
+    </customvalue>
+  </customvalues>
+</customlist>

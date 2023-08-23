@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_uc_trx_void_reasons">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Transaction Void Reasons</name>
+  <customvalues>
+    <customvalue scriptid="val_17904180_3751499_sb1_748">
+      <isinactive>F</isinactive>
+      <value>Lost Check, Stop Payment Placed</value>
+    </customvalue>
+    <customvalue scriptid="val_17904181_3751499_sb1_445">
+      <isinactive>F</isinactive>
+      <value>Funds Returned by Recipient</value>
+    </customvalue>
+    <customvalue scriptid="val_17904182_3751499_sb1_781">
+      <isinactive>F</isinactive>
+      <value>Marked as Paid But Not Sent to Bank</value>
+    </customvalue>
+    <customvalue scriptid="val_17904183_3751499_sb1_249">
+      <isinactive>F</isinactive>
+      <value>Payment Failed</value>
+    </customvalue>
+    <customvalue scriptid="val_17904194_3751499_sb1_533">
+      <isinactive>F</isinactive>
+      <value>Other</value>
+    </customvalue>
+  </customvalues>
+</customlist>

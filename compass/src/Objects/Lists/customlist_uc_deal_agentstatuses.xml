@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_uc_deal_agentstatuses">
+  <description>List of agent statuses used to determine the type of AMA</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Agent Statuses</name>
+  <customvalues>
+    <customvalue scriptid="val_644535_3751499_sb1_321">
+      <isinactive>F</isinactive>
+      <value>Principal</value>
+    </customvalue>
+    <customvalue scriptid="val_644537_3751499_sb1_560">
+      <isinactive>F</isinactive>
+      <value>Referral Director</value>
+    </customvalue>
+    <customvalue scriptid="val_644536_3751499_sb1_310">
+      <isinactive>F</isinactive>
+      <value>Agent</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,80 @@
+<customlist scriptid="customlist_uc_compassitemtypes">
+  <description>Types of items as they pertain to deal transactions</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Compass Item Type</name>
+  <customvalues>
+    <customvalue scriptid="val_718457_3751499_499">
+      <isinactive>F</isinactive>
+      <value>Commission Expense</value>
+    </customvalue>
+    <customvalue scriptid="val_718458_3751499_499">
+      <isinactive>F</isinactive>
+      <value>Agent Bonus</value>
+    </customvalue>
+    <customvalue scriptid="val_718459_3751499_847">
+      <isinactive>F</isinactive>
+      <value>Transaction Fee</value>
+    </customvalue>
+    <customvalue scriptid="val_3394006_3751499_957">
+      <isinactive>F</isinactive>
+      <value>Additional Deal Income</value>
+    </customvalue>
+    <customvalue scriptid="val_718460_3751499_196">
+      <isinactive>F</isinactive>
+      <value>Other Expense</value>
+    </customvalue>
+    <customvalue scriptid="val_1568261_3751499_321">
+      <isinactive>F</isinactive>
+      <value>Incentive</value>
+    </customvalue>
+    <customvalue scriptid="val_3394051_3751499_955">
+      <isinactive>F</isinactive>
+      <value>Resource Fee</value>
+    </customvalue>
+    <customvalue scriptid="val_718461_3751499_388">
+      <isinactive>F</isinactive>
+      <value>AEP</value>
+    </customvalue>
+    <customvalue scriptid="val_1435631_3751499_689">
+      <isinactive>F</isinactive>
+      <value>Commission</value>
+    </customvalue>
+    <customvalue scriptid="val_3394052_3751499_765">
+      <isinactive>F</isinactive>
+      <value>E&amp;O Insurance</value>
+    </customvalue>
+    <customvalue scriptid="val_3394054_3751499_561">
+      <isinactive>F</isinactive>
+      <value>CA Business Incentive</value>
+    </customvalue>
+    <customvalue scriptid="val_3394862_3751499_483">
+      <isinactive>F</isinactive>
+      <value>Taxes</value>
+    </customvalue>
+    <customvalue scriptid="val_3394080_3751499_313">
+      <isinactive>F</isinactive>
+      <value>Other Income</value>
+    </customvalue>
+    <customvalue scriptid="val_3394053_3751499_495">
+      <isinactive>F</isinactive>
+      <value>Agent Betterment Program</value>
+    </customvalue>
+    <customvalue scriptid="val_3938067_3751499_sb2_183">
+      <isinactive>F</isinactive>
+      <value>Contract to Close Fee</value>
+    </customvalue>
+    <customvalue scriptid="val_4261617_3751499_sb1_188">
+      <isinactive>F</isinactive>
+      <value>Flat Fee</value>
+    </customvalue>
+    <customvalue scriptid="val_33985404_3751499_527">
+      <isinactive>F</isinactive>
+      <value>General Excise Tax</value>
+    </customvalue>
+    <customvalue scriptid="val_39420791_3751499_980">
+      <isinactive>F</isinactive>
+      <value>Title Clearing Payment</value>
+    </customvalue>
+  </customvalues>
+</customlist>

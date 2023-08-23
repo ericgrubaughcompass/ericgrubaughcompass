@@ -1,0 +1,100 @@
+<customlist scriptid="customlist_uc_deal_genericdealids">
+  <description>List of Generic IDs that map deal items to their placeholder fields depending on region.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Generic Fee Item Types</name>
+  <customvalues>
+    <customvalue scriptid="val_678477_3751499_sb1_187">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 1</value>
+    </customvalue>
+    <customvalue scriptid="val_678478_3751499_sb1_569">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 2</value>
+    </customvalue>
+    <customvalue scriptid="val_678479_3751499_sb1_853">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 3</value>
+    </customvalue>
+    <customvalue scriptid="val_678480_3751499_sb1_768">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 4</value>
+    </customvalue>
+    <customvalue scriptid="val_678481_3751499_sb1_745">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 5</value>
+    </customvalue>
+    <customvalue scriptid="val_678482_3751499_sb1_439">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 6</value>
+    </customvalue>
+    <customvalue scriptid="val_678495_3751499_sb1_456">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 7</value>
+    </customvalue>
+    <customvalue scriptid="val_678496_3751499_sb1_709">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 8</value>
+    </customvalue>
+    <customvalue scriptid="val_678497_3751499_sb1_148">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 9</value>
+    </customvalue>
+    <customvalue scriptid="val_678498_3751499_sb1_658">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 10</value>
+    </customvalue>
+    <customvalue scriptid="val_678499_3751499_sb1_715">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 101</value>
+    </customvalue>
+    <customvalue scriptid="val_678500_3751499_sb1_395">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 102</value>
+    </customvalue>
+    <customvalue scriptid="val_678501_3751499_sb1_287">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 103</value>
+    </customvalue>
+    <customvalue scriptid="val_678502_3751499_sb1_590">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 104</value>
+    </customvalue>
+    <customvalue scriptid="val_678503_3751499_sb1_627">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 105</value>
+    </customvalue>
+    <customvalue scriptid="val_678504_3751499_sb1_146">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 106</value>
+    </customvalue>
+    <customvalue scriptid="val_678505_3751499_sb1_720">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 107</value>
+    </customvalue>
+    <customvalue scriptid="val_678506_3751499_sb1_399">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 108</value>
+    </customvalue>
+    <customvalue scriptid="val_1204702_3751499_648">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 109</value>
+    </customvalue>
+    <customvalue scriptid="val_1655784_3751499_859">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 110</value>
+    </customvalue>
+    <customvalue scriptid="val_1472315_3751499_sb1_557">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 111</value>
+    </customvalue>
+    <customvalue scriptid="val_1489659_3751499_sb1_702">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 112</value>
+    </customvalue>
+    <customvalue scriptid="val_1489666_3751499_sb1_242">
+      <isinactive>F</isinactive>
+      <value>Generic Fee 113</value>
+    </customvalue>
+  </customvalues>
+</customlist>

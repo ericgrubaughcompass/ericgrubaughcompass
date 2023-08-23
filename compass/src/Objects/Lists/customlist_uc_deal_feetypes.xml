@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_uc_deal_feetypes">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Fee Types</name>
+  <customvalues>
+    <customvalue scriptid="val_671482_3751499_871">
+      <isinactive>F</isinactive>
+      <value>Brokerage Only</value>
+    </customvalue>
+    <customvalue scriptid="val_671484_3751499_711">
+      <isinactive>F</isinactive>
+      <value>Out of Net</value>
+    </customvalue>
+    <customvalue scriptid="val_671483_3751499_586">
+      <isinactive>F</isinactive>
+      <value>Off the Top</value>
+    </customvalue>
+  </customvalues>
+</customlist>

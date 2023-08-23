@@ -1,0 +1,120 @@
+<customlist scriptid="customlist_uc_dwsmarkets">
+  <description>This is used to exclude markets</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>DWS Markets</name>
+  <customvalues>
+    <customvalue scriptid="val_26931941_3751499_sb1_733">
+      <isinactive>F</isinactive>
+      <value>South Florida</value>
+    </customvalue>
+    <customvalue scriptid="val_26931942_3751499_sb1_546">
+      <isinactive>F</isinactive>
+      <value>Florida</value>
+    </customvalue>
+    <customvalue scriptid="val_26931943_3751499_sb1_185">
+      <isinactive>F</isinactive>
+      <value>Connecticut</value>
+    </customvalue>
+    <customvalue scriptid="val_26931944_3751499_sb1_611">
+      <isinactive>F</isinactive>
+      <value>Westchester</value>
+    </customvalue>
+    <customvalue scriptid="val_26931945_3751499_sb1_982">
+      <isinactive>F</isinactive>
+      <value>Long Island</value>
+    </customvalue>
+    <customvalue scriptid="val_26931946_3751499_sb1_114">
+      <isinactive>F</isinactive>
+      <value>North New Jersey</value>
+    </customvalue>
+    <customvalue scriptid="val_26931947_3751499_sb1_385">
+      <isinactive>F</isinactive>
+      <value>New York City</value>
+    </customvalue>
+    <customvalue scriptid="val_26931948_3751499_sb1_308">
+      <isinactive>F</isinactive>
+      <value>New York Metro</value>
+    </customvalue>
+    <customvalue scriptid="val_26931949_3751499_sb1_440">
+      <isinactive>F</isinactive>
+      <value>Hamptons</value>
+    </customvalue>
+    <customvalue scriptid="val_26931950_3751499_sb1_761">
+      <isinactive>F</isinactive>
+      <value>Greater Indianapolis Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931951_3751499_sb1_266">
+      <isinactive>F</isinactive>
+      <value>Greater Milwaukee Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931952_3751499_sb1_971">
+      <isinactive>F</isinactive>
+      <value>Minneapolis-St. Paul</value>
+    </customvalue>
+    <customvalue scriptid="val_26931953_3751499_sb1_890">
+      <isinactive>F</isinactive>
+      <value>Greater Kansas City Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931954_3751499_sb1_566">
+      <isinactive>F</isinactive>
+      <value>Greater St. Louis Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931955_3751499_sb1_858">
+      <isinactive>F</isinactive>
+      <value>Idaho</value>
+    </customvalue>
+    <customvalue scriptid="val_26931956_3751499_sb1_175">
+      <isinactive>F</isinactive>
+      <value>Delaware</value>
+    </customvalue>
+    <customvalue scriptid="val_26931957_3751499_sb1_236">
+      <isinactive>F</isinactive>
+      <value>Raleigh-Durham Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931958_3751499_sb1_876">
+      <isinactive>F</isinactive>
+      <value>Greater Pittsburgh Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931959_3751499_sb1_813">
+      <isinactive>F</isinactive>
+      <value>Greater Philadelphia Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931960_3751499_sb1_889">
+      <isinactive>F</isinactive>
+      <value>Greater Charlotte Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931961_3751499_sb1_845">
+      <isinactive>F</isinactive>
+      <value>Baltimore</value>
+    </customvalue>
+    <customvalue scriptid="val_26931962_3751499_sb1_668">
+      <isinactive>F</isinactive>
+      <value>Washington, DC Area</value>
+    </customvalue>
+    <customvalue scriptid="val_26931963_3751499_sb1_817">
+      <isinactive>F</isinactive>
+      <value>New England</value>
+    </customvalue>
+    <customvalue scriptid="val_26942639_3751499_sb1_861">
+      <isinactive>F</isinactive>
+      <value>Midwest</value>
+    </customvalue>
+    <customvalue scriptid="val_uc_dwsmarkets_hawaii">
+      <isinactive>F</isinactive>
+      <value>Hawaii</value>
+    </customvalue>
+    <customvalue scriptid="val_uc_dwsmarkets_colorado">
+      <isinactive>F</isinactive>
+      <value>Colorado</value>
+    </customvalue>
+    <customvalue scriptid="val_uc_dwsmarkets_seattle">
+      <isinactive>F</isinactive>
+      <value>Greater Seattle Area</value>
+    </customvalue>
+    <customvalue scriptid="val_uc_dwsmarkets_nashville">
+      <isinactive>F</isinactive>
+      <value>Greater Nashville Area</value>
+    </customvalue>
+  </customvalues>
+</customlist>

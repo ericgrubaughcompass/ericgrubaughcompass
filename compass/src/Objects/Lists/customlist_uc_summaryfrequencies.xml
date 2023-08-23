@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_uc_summaryfrequencies">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Summary Frequencies</name>
+  <customvalues>
+    <customvalue scriptid="val_3809033_3751499_sb2_831">
+      <isinactive>F</isinactive>
+      <value>Weekly</value>
+    </customvalue>
+    <customvalue scriptid="val_3809034_3751499_sb2_521">
+      <isinactive>F</isinactive>
+      <value>Monthly</value>
+    </customvalue>
+    <customvalue scriptid="val_3809035_3751499_sb2_589">
+      <isinactive>F</isinactive>
+      <value>Quarterly</value>
+    </customvalue>
+    <customvalue scriptid="val_3809036_3751499_sb2_986">
+      <isinactive>F</isinactive>
+      <value>Annually</value>
+    </customvalue>
+    <customvalue scriptid="val_3809037_3751499_sb2_917">
+      <isinactive>F</isinactive>
+      <value>Custom</value>
+    </customvalue>
+  </customvalues>
+</customlist>

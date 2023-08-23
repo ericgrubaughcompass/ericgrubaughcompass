@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_mismatch">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Mismatch</name>
+  <customvalues>
+    <customvalue scriptid="val_542405_3751499_sb1_867">
+      <isinactive>F</isinactive>
+      <value>Agent Allocation</value>
+    </customvalue>
+    <customvalue scriptid="val_542407_3751499_sb1_104">
+      <isinactive>F</isinactive>
+      <value>Both</value>
+    </customvalue>
+    <customvalue scriptid="val_542406_3751499_sb1_858">
+      <isinactive>F</isinactive>
+      <value>Fee/Concession/Tax</value>
+    </customvalue>
+  </customvalues>
+</customlist>

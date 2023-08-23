@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_uc_deal_item_payt">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Pay to</name>
+  <customvalues>
+    <customvalue scriptid="val_7157630_3751499_sb1_789">
+      <isinactive>F</isinactive>
+      <value>Pay To Required</value>
+    </customvalue>
+    <customvalue scriptid="val_7157631_3751499_sb1_849">
+      <isinactive>F</isinactive>
+      <value>Pay To Internal Agent Required</value>
+    </customvalue>
+  </customvalues>
+</customlist>

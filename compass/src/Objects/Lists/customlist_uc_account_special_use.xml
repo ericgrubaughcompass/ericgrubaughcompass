@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_uc_account_special_use">
+  <description>List used in the Special Use GL Account field.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Account Special Use</name>
+  <customvalues>
+    <customvalue scriptid="val_17905940_3751499_sb1_932">
+      <isinactive>F</isinactive>
+      <value>Escrow</value>
+    </customvalue>
+    <customvalue scriptid="val_17905941_3751499_sb1_520">
+      <isinactive>F</isinactive>
+      <value>GCI Impacting</value>
+    </customvalue>
+    <customvalue scriptid="val_17905945_3751499_sb1_270">
+      <isinactive>F</isinactive>
+      <value>Deal Referral</value>
+    </customvalue>
+    <customvalue scriptid="val_17906416_3751499_sb1_768">
+      <isinactive>F</isinactive>
+      <value>Trade</value>
+    </customvalue>
+  </customvalues>
+</customlist>

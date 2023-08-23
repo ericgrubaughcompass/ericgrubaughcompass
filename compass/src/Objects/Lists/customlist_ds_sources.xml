@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_ds_sources">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Submission Sources</name>
+  <customvalues>
+    <customvalue scriptid="val_3808889_3751499_sb2_686">
+      <isinactive>F</isinactive>
+      <value>Deal Closer 1.5</value>
+    </customvalue>
+    <customvalue scriptid="val_3808890_3751499_sb2_203">
+      <isinactive>F</isinactive>
+      <value>SkySlope</value>
+    </customvalue>
+    <customvalue scriptid="val_customlist_ds_sources_dealcloser_aps">
+      <isinactive>F</isinactive>
+      <value>Deal Closer via APS</value>
+    </customvalue>
+  </customvalues>
+</customlist>

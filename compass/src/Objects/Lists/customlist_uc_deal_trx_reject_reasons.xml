@@ -1,0 +1,48 @@
+<customlist scriptid="customlist_uc_deal_trx_reject_reasons">
+  <description>Reject reasons for deal related transactions.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Trans Reject Reasons</name>
+  <customvalues>
+    <customvalue scriptid="val_17879037_3751499_sb1_723">
+      <isinactive>F</isinactive>
+      <value>Deal Broker Fee Exceeded</value>
+    </customvalue>
+    <customvalue scriptid="val_17879038_3751499_sb1_492">
+      <isinactive>F</isinactive>
+      <value>Other</value>
+    </customvalue>
+    <customvalue scriptid="val_22246056_3751499_484">
+      <isinactive>F</isinactive>
+      <value>Contract to Close (CTC) -  Fee Amount</value>
+    </customvalue>
+    <customvalue scriptid="val_22246051_3751499_995">
+      <isinactive>F</isinactive>
+      <value>Resources Not Taken</value>
+    </customvalue>
+    <customvalue scriptid="val_22246052_3751499_295">
+      <isinactive>F</isinactive>
+      <value>Incorrect Split Calculation</value>
+    </customvalue>
+    <customvalue scriptid="val_22246055_3751499_209">
+      <isinactive>F</isinactive>
+      <value>Bill Credit Not Applied</value>
+    </customvalue>
+    <customvalue scriptid="val_22246057_3751499_559">
+      <isinactive>F</isinactive>
+      <value>Agent Betterment</value>
+    </customvalue>
+    <customvalue scriptid="val_22246053_3751499_139">
+      <isinactive>F</isinactive>
+      <value>AEP - Exceeds Deduction Cap</value>
+    </customvalue>
+    <customvalue scriptid="val_22246054_3751499_665">
+      <isinactive>F</isinactive>
+      <value>AEP - Not Taken</value>
+    </customvalue>
+    <customvalue scriptid="val_22246076_3751499_995">
+      <isinactive>F</isinactive>
+      <value>Dynamic Split - Tier Up Error</value>
+    </customvalue>
+  </customvalues>
+</customlist>

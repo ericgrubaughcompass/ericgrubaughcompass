@@ -1,0 +1,56 @@
+<customlist scriptid="customlist_uc_deal_processing_teams">
+  <description>The types of teams eligible to process deals</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Deal Processing Teams</name>
+  <customvalues>
+    <customvalue scriptid="val_637056_3751499_sb1_512">
+      <isinactive>F</isinactive>
+      <value>Chennai</value>
+    </customvalue>
+    <customvalue scriptid="val_1465800_3751499_sb1_193">
+      <isinactive>F</isinactive>
+      <value>Commission Specialist - CDA</value>
+    </customvalue>
+    <customvalue scriptid="val_1465423_3751499_sb1_442">
+      <isinactive>T</isinactive>
+      <value>RPA Bot</value>
+    </customvalue>
+    <customvalue scriptid="val_695575_3751499_111">
+      <isinactive>F</isinactive>
+      <value>FBS Historical</value>
+    </customvalue>
+    <customvalue scriptid="val_1073333_3751499_750">
+      <isinactive>F</isinactive>
+      <value>Non-GCI Recording Transaction</value>
+    </customvalue>
+    <customvalue scriptid="val_637057_3751499_sb1_920">
+      <isinactive>F</isinactive>
+      <value>Commission Specialist</value>
+    </customvalue>
+    <customvalue scriptid="val_1821539_3751499_sb1_827">
+      <isinactive>F</isinactive>
+      <value>Automated Calculation - Callidus</value>
+    </customvalue>
+    <customvalue scriptid="val_3717055_3751499_574">
+      <isinactive>F</isinactive>
+      <value>Compass Development</value>
+    </customvalue>
+    <customvalue scriptid="val_4029954_3751499_672">
+      <isinactive>F</isinactive>
+      <value>Referral Commission Specialist</value>
+    </customvalue>
+    <customvalue scriptid="val_4278818_3751499_sb1_237">
+      <isinactive>F</isinactive>
+      <value>Automated Calculation - CCE</value>
+    </customvalue>
+    <customvalue scriptid="val_10791214_3751499_807">
+      <isinactive>F</isinactive>
+      <value>Commission Specialist - Manual Review</value>
+    </customvalue>
+    <customvalue scriptid="val_processingteam_dealsworkflowservice">
+      <isinactive>F</isinactive>
+      <value>Deals Workflow Service</value>
+    </customvalue>
+  </customvalues>
+</customlist>

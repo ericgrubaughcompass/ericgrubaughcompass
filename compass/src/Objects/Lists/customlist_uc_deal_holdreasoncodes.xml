@@ -1,0 +1,224 @@
+<customlist scriptid="customlist_uc_deal_holdreasoncodes">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <name>Hold Reason Codes</name>
+  <customvalues>
+    <customvalue scriptid="val_15113436_3751499_sb1_105">
+      <isinactive>F</isinactive>
+      <value> SkySlope - Missing Documentation (Closing Docs) - TC action required</value>
+    </customvalue>
+    <customvalue scriptid="val_1838847_3751499_sb1_258">
+      <isinactive>T</isinactive>
+      <value>Agent/Vendor Profile Issue - Other</value>
+    </customvalue>
+    <customvalue scriptid="val_1838845_3751499_sb1_403">
+      <isinactive>T</isinactive>
+      <value>Agent/Vendor Profile Issue - Pending Agent/Vendor Netsuite Profile</value>
+    </customvalue>
+    <customvalue scriptid="val_15113420_3751499_sb1_995">
+      <isinactive>F</isinactive>
+      <value>Agent/Vendor Profile Issue - Pending Agent/Vendor Netsuite Profile</value>
+    </customvalue>
+    <customvalue scriptid="val_1838846_3751499_sb1_965">
+      <isinactive>T</isinactive>
+      <value>Agent/Vendor Profile Issue - Salesforce AMA or record issue</value>
+    </customvalue>
+    <customvalue scriptid="val_15113421_3751499_sb1_722">
+      <isinactive>F</isinactive>
+      <value>Agent/Vendor Profile Issue - Salesforce AMA or record issue</value>
+    </customvalue>
+    <customvalue scriptid="val_15113422_3751499_sb1_627">
+      <isinactive>F</isinactive>
+      <value>Approval Issue - Internal Approval Required</value>
+    </customvalue>
+    <customvalue scriptid="val_1838843_3751499_sb1_692">
+      <isinactive>T</isinactive>
+      <value>Approval Issue - Internal Approval Required</value>
+    </customvalue>
+    <customvalue scriptid="val_17888302_3751499_sb1_619">
+      <isinactive>F</isinactive>
+      <value>Approval Issue - No approved Commission Statement on file</value>
+    </customvalue>
+    <customvalue scriptid="val_1838844_3751499_sb1_642">
+      <isinactive>T</isinactive>
+      <value>Approval Issue - Other</value>
+    </customvalue>
+    <customvalue scriptid="val_1838824_3751499_sb1_125">
+      <isinactive>T</isinactive>
+      <value>Deal Closer Issue - Incorrect input - Agent follow-up required</value>
+    </customvalue>
+    <customvalue scriptid="val_15113423_3751499_sb1_859">
+      <isinactive>F</isinactive>
+      <value>Deal Closer Issue - Incorrect or unclear input - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_1838823_3751499_sb1_163">
+      <isinactive>T</isinactive>
+      <value>Deal Closer Issue - Incorrect submission - shared Deal</value>
+    </customvalue>
+    <customvalue scriptid="val_1838822_3751499_sb1_738">
+      <isinactive>T</isinactive>
+      <value>Deal Closer Issue - Missing Documentation</value>
+    </customvalue>
+    <customvalue scriptid="val_15113425_3751499_sb1_237">
+      <isinactive>T</isinactive>
+      <value>Deal Closer Issue - Missing Documentation (ATLA/HUD) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_15113426_3751499_sb1_312">
+      <isinactive>F</isinactive>
+      <value>Deal Closer Issue - Missing Documentation (Closing Docs) - Agent/TC action required</value>
+    </customvalue>
+    <customvalue scriptid="val_15113424_3751499_sb1_884">
+      <isinactive>F</isinactive>
+      <value>Deal Closer Issue - Missing Documentation (Referral Docs/W9) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_1838825_3751499_sb1_568">
+      <isinactive>T</isinactive>
+      <value>Deal Closer Issue - Other</value>
+    </customvalue>
+    <customvalue scriptid="val_15113427_3751499_sb1_375">
+      <isinactive>F</isinactive>
+      <value>Funds Issue - Excess Funds - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_1838841_3751499_sb1_797">
+      <isinactive>T</isinactive>
+      <value>Funds Issue - Excess Funds/Pass-through not submitted</value>
+    </customvalue>
+    <customvalue scriptid="val_15113432_3751499_sb1_906">
+      <isinactive>F</isinactive>
+      <value>Funds Issue - Funds deposited and missing from check log</value>
+    </customvalue>
+    <customvalue scriptid="val_17975920_3751499_926">
+      <isinactive>F</isinactive>
+      <value>Funds issue - Funds logged but not deposited</value>
+    </customvalue>
+    <customvalue scriptid="val_1838840_3751499_sb1_308">
+      <isinactive>T</isinactive>
+      <value>Funds Issue - Insufficient Funds</value>
+    </customvalue>
+    <customvalue scriptid="val_15113428_3751499_sb1_267">
+      <isinactive>F</isinactive>
+      <value>Funds Issue - Insufficient Funds - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_1838839_3751499_sb1_566">
+      <isinactive>T</isinactive>
+      <value>Funds Issue - Missing Funds</value>
+    </customvalue>
+    <customvalue scriptid="val_8431850_3751499_sb1_790">
+      <isinactive>T</isinactive>
+      <value>Funds Issue - Missing Funds (SMS Program)</value>
+    </customvalue>
+    <customvalue scriptid="val_15113429_3751499_sb1_615">
+      <isinactive>F</isinactive>
+      <value>Funds Issue - No Funds Received (Commission) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_15113430_3751499_sb1_191">
+      <isinactive>F</isinactive>
+      <value>Funds Issue - No Funds Received (Earnest Money) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_17879497_3751499_sb1_149">
+      <isinactive>F</isinactive>
+      <value>Funds Issue - No Funds Received (Rental Community only) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_17879498_3751499_sb1_242">
+      <isinactive>F</isinactive>
+      <value>Funds Issue - No Funds Received and No Signed Lease and No Invoice (Rental Community only) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_1838842_3751499_sb1_239">
+      <isinactive>T</isinactive>
+      <value>Funds Issue - Other</value>
+    </customvalue>
+    <customvalue scriptid="val_17975921_3751499_226">
+      <isinactive>F</isinactive>
+      <value>Funds/Deal Closer Issue - No Funds Received and No Signed Lease (Rentals only)</value>
+    </customvalue>
+    <customvalue scriptid="val_1821654_3751499_sb1_195">
+      <isinactive>T</isinactive>
+      <value>Missing Documents</value>
+    </customvalue>
+    <customvalue scriptid="val_21639650_3751499_305">
+      <isinactive>F</isinactive>
+      <value>New Development (for New Dev team only)</value>
+    </customvalue>
+    <customvalue scriptid="val_1838387_3751499_sb1_839">
+      <isinactive>T</isinactive>
+      <value>No Cash</value>
+    </customvalue>
+    <customvalue scriptid="val_1838826_3751499_sb1_218">
+      <isinactive>T</isinactive>
+      <value>Non-Deal Closer Issue - Need Additional Information</value>
+    </customvalue>
+    <customvalue scriptid="val_1838838_3751499_sb1_551">
+      <isinactive>T</isinactive>
+      <value>Non-Deal Closer Issue - Other</value>
+    </customvalue>
+    <customvalue scriptid="val_1838837_3751499_sb1_763">
+      <isinactive>T</isinactive>
+      <value>Non-Deal Closer Issue - Pending OP request form</value>
+    </customvalue>
+    <customvalue scriptid="val_15113433_3751499_sb1_533">
+      <isinactive>F</isinactive>
+      <value>Non-Deal Closer Issue - Pending OP request form - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_15114295_3751499_sb1_339">
+      <isinactive>F</isinactive>
+      <value>RFC - Pending Approval</value>
+    </customvalue>
+    <customvalue scriptid="val_15114296_3751499_sb1_519">
+      <isinactive>F</isinactive>
+      <value>RFC - Pending Settlement Date</value>
+    </customvalue>
+    <customvalue scriptid="val_15113435_3751499_sb1_473">
+      <isinactive>F</isinactive>
+      <value>SkySlope - Missing Documentation (ATLA/HUD) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_17888300_3751499_sb1_438">
+      <isinactive>F</isinactive>
+      <value>SkySlope - Missing Documentation (Closing Docs) + No Funds Received</value>
+    </customvalue>
+    <customvalue scriptid="val_17975923_3751499_375">
+      <isinactive>F</isinactive>
+      <value>SkySlope - Missing Documentation (Credit from Commission Letter)</value>
+    </customvalue>
+    <customvalue scriptid="val_15113434_3751499_sb1_119">
+      <isinactive>F</isinactive>
+      <value>SkySlope - Missing Documentation (Referral Docs/W9) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_17879499_3751499_sb1_983">
+      <isinactive>F</isinactive>
+      <value>SkySlope - Missing Documentation/No Signed Lease/No Invoice (Rental Community) - Agent action required</value>
+    </customvalue>
+    <customvalue scriptid="val_17888301_3751499_sb1_706">
+      <isinactive>F</isinactive>
+      <value>Skyslope - Not Archived - TC action required</value>
+    </customvalue>
+    <customvalue scriptid="val_15114297_3751499_sb1_250">
+      <isinactive>F</isinactive>
+      <value>SMS Program - Missing Documentation (Closing Docs)</value>
+    </customvalue>
+    <customvalue scriptid="val_15114298_3751499_sb1_574">
+      <isinactive>F</isinactive>
+      <value>SMS Program - Missing Documentation (Referral Docs/W9)</value>
+    </customvalue>
+    <customvalue scriptid="val_15113431_3751499_sb1_681">
+      <isinactive>F</isinactive>
+      <value>SMS Program - No Funds Received</value>
+    </customvalue>
+    <customvalue scriptid="val_15114300_3751499_sb1_657">
+      <isinactive>F</isinactive>
+      <value>SMS Program - No Funds Received + Missing Documentation (Closing Docs and Referral Docs/W9)</value>
+    </customvalue>
+    <customvalue scriptid="val_15114299_3751499_sb1_203">
+      <isinactive>F</isinactive>
+      <value>SMS Program - No Funds Received + Missing Documentation (Closing Docs)</value>
+    </customvalue>
+    <customvalue scriptid="val_15113437_3751499_sb1_961">
+      <isinactive>F</isinactive>
+      <value>Split Discrepancy - Split exception form required</value>
+    </customvalue>
+    <customvalue scriptid="val_1838848_3751499_sb1_603">
+      <isinactive>T</isinactive>
+      <value>Unassigned - Other</value>
+    </customvalue>
+  </customvalues>
+</customlist>

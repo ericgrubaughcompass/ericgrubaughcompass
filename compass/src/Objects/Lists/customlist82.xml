@@ -1,0 +1,60 @@
+<customlist scriptid="customlist82">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Listing Type - Descriptions</name>
+  <customvalues>
+    <customvalue scriptid="value_1_3751499_860">
+      <isinactive>F</isinactive>
+      <value>Rental - Residential</value>
+    </customvalue>
+    <customvalue scriptid="value_2_3751499_860">
+      <isinactive>F</isinactive>
+      <value>Rental - Commercial</value>
+    </customvalue>
+    <customvalue scriptid="value_8_3751499_860">
+      <isinactive>F</isinactive>
+      <value>Sale - Commercial</value>
+    </customvalue>
+    <customvalue scriptid="value_7_3751499_860">
+      <isinactive>F</isinactive>
+      <value>Sale - Rowhouse/Townhouse</value>
+    </customvalue>
+    <customvalue scriptid="val_119583_3751499_251">
+      <isinactive>F</isinactive>
+      <value>Referral</value>
+    </customvalue>
+    <customvalue scriptid="value_5_3751499_860">
+      <isinactive>F</isinactive>
+      <value>Sale - House/Single Family</value>
+    </customvalue>
+    <customvalue scriptid="value_6_3751499_860">
+      <isinactive>F</isinactive>
+      <value>Sale - Multi family</value>
+    </customvalue>
+    <customvalue scriptid="val_124485_3751499_882">
+      <isinactive>F</isinactive>
+      <value>Sale - Land</value>
+    </customvalue>
+    <customvalue scriptid="val_124486_3751499_234">
+      <isinactive>F</isinactive>
+      <value>Sale - Mobile Home</value>
+    </customvalue>
+    <customvalue scriptid="value_3_3751499_860">
+      <isinactive>F</isinactive>
+      <value>Sale - Co-op</value>
+    </customvalue>
+    <customvalue scriptid="value_4_3751499_860">
+      <isinactive>F</isinactive>
+      <value>Sale - Condo</value>
+    </customvalue>
+    <customvalue scriptid="value_4_3751499_condop">
+      <isinactive>F</isinactive>
+      <value>Sale - Condop</value>
+    </customvalue>
+    <customvalue scriptid="val_33677035_3751499_764">
+      <isinactive>F</isinactive>
+      <value>Rental - Short-Term Rental</value>
+    </customvalue>
+  </customvalues>
+</customlist>

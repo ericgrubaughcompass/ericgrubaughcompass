@@ -1,0 +1,64 @@
+<customlist scriptid="customlist_uc_deal_voidreasons">
+  <description>Reasons for why a deal was voided</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Void Reasons</name>
+  <customvalues>
+    <customvalue scriptid="val_643359_3751499_sb1_273">
+      <isinactive>F</isinactive>
+      <value>Deal Level Data - No/Duplicate AMA</value>
+    </customvalue>
+    <customvalue scriptid="val_671150_3751499_396">
+      <isinactive>F</isinactive>
+      <value>Deal Level Data - Missing Source Data</value>
+    </customvalue>
+    <customvalue scriptid="val_656721_3751499_478">
+      <isinactive>F</isinactive>
+      <value>Deal Fee/Concession/Tax - Missing &apos;Pay To&apos; or &apos;Transact With&apos; Vendor</value>
+    </customvalue>
+    <customvalue scriptid="val_671151_3751499_512">
+      <isinactive>F</isinactive>
+      <value>Deal Fee/Concession/Tax - Missing Source Data</value>
+    </customvalue>
+    <customvalue scriptid="val_656719_3751499_637">
+      <isinactive>F</isinactive>
+      <value>Agent Allocation - DO NOT PAY/USE</value>
+    </customvalue>
+    <customvalue scriptid="val_656720_3751499_619">
+      <isinactive>F</isinactive>
+      <value>Agent Allocation - Missing Agent Name</value>
+    </customvalue>
+    <customvalue scriptid="val_671152_3751499_542">
+      <isinactive>F</isinactive>
+      <value>Agent Allocation - Missing Source Data</value>
+    </customvalue>
+    <customvalue scriptid="val_1072746_3751499_185">
+      <isinactive>F</isinactive>
+      <value>Agent Allocation - Account IDs Do Not Match</value>
+    </customvalue>
+    <customvalue scriptid="val_1206052_3751499_386">
+      <isinactive>F</isinactive>
+      <value>Agent Allocation - All Agents have Fee Split Waived</value>
+    </customvalue>
+    <customvalue scriptid="val_679498_3751499_sb1_854">
+      <isinactive>F</isinactive>
+      <value>Agent Allocation - Subsidiary Mismatch</value>
+    </customvalue>
+    <customvalue scriptid="val_671153_3751499_796">
+      <isinactive>F</isinactive>
+      <value>No Split Override %</value>
+    </customvalue>
+    <customvalue scriptid="val_648545_3751499_436">
+      <isinactive>F</isinactive>
+      <value>Manually Processed by Agent Finance</value>
+    </customvalue>
+    <customvalue scriptid="val_650015_3751499_934">
+      <isinactive>F</isinactive>
+      <value>No Position in Callidus</value>
+    </customvalue>
+    <customvalue scriptid="val_643360_3751499_sb1_299">
+      <isinactive>F</isinactive>
+      <value>Other</value>
+    </customvalue>
+  </customvalues>
+</customlist>

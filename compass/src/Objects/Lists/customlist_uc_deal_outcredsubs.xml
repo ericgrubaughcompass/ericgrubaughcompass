@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_uc_deal_outcredsubs">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Outstanding Credit Subs</name>
+  <customvalues>
+    <customvalue scriptid="val_3751499_outcredsubs_ca">
+      <isinactive>F</isinactive>
+      <value>14</value>
+    </customvalue>
+    <customvalue scriptid="val_3751499_outcredsubs_sf">
+      <isinactive>F</isinactive>
+      <value>17</value>
+    </customvalue>
+    <customvalue scriptid="val_3751499_outcredsubs_sd">
+      <isinactive>F</isinactive>
+      <value>20</value>
+    </customvalue>
+    <customvalue scriptid="val_3751499_outcredsubs_tx">
+      <isinactive>F</isinactive>
+      <value>21</value>
+    </customvalue>
+    <customvalue scriptid="val_3751499_outcredsubs_ga">
+      <isinactive>F</isinactive>
+      <value>25</value>
+    </customvalue>
+  </customvalues>
+</customlist>

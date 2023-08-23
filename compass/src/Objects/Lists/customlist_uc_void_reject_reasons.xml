@@ -1,0 +1,56 @@
+<customlist scriptid="customlist_uc_void_reject_reasons">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Void Rejection Reasons</name>
+  <customvalues>
+    <customvalue scriptid="val_17900650_3751499_sb1_975">
+      <isinactive>F</isinactive>
+      <value>Payment Cleared</value>
+    </customvalue>
+    <customvalue scriptid="val_17900651_3751499_sb1_150">
+      <isinactive>T</isinactive>
+      <value>Reason 01</value>
+    </customvalue>
+    <customvalue scriptid="val_17900652_3751499_sb1_781">
+      <isinactive>T</isinactive>
+      <value>Reason 02</value>
+    </customvalue>
+    <customvalue scriptid="val_17900657_3751499_sb1_336">
+      <isinactive>T</isinactive>
+      <value>Reason 07</value>
+    </customvalue>
+    <customvalue scriptid="val_17900653_3751499_sb1_667">
+      <isinactive>T</isinactive>
+      <value>Reason 03</value>
+    </customvalue>
+    <customvalue scriptid="val_17900656_3751499_sb1_963">
+      <isinactive>T</isinactive>
+      <value>Reason 06</value>
+    </customvalue>
+    <customvalue scriptid="val_17900658_3751499_sb1_260">
+      <isinactive>T</isinactive>
+      <value>Reason 08</value>
+    </customvalue>
+    <customvalue scriptid="val_17900654_3751499_sb1_689">
+      <isinactive>T</isinactive>
+      <value>Reason 04</value>
+    </customvalue>
+    <customvalue scriptid="val_17900655_3751499_sb1_756">
+      <isinactive>T</isinactive>
+      <value>Reason 05</value>
+    </customvalue>
+    <customvalue scriptid="val_17900659_3751499_sb1_618">
+      <isinactive>T</isinactive>
+      <value>Reason 09</value>
+    </customvalue>
+    <customvalue scriptid="val_17900661_3751499_sb1_298">
+      <isinactive>F</isinactive>
+      <value>Other</value>
+    </customvalue>
+    <customvalue scriptid="val_17900660_3751499_sb1_623">
+      <isinactive>T</isinactive>
+      <value>Reason 10</value>
+    </customvalue>
+  </customvalues>
+</customlist>
