@@ -4,7 +4,7 @@
   <name>NS | Employee Sync with Coupa</name>
   <notifyadmins>F</notifyadmins>
   <notifyemails>netsuitedevs@compass.com</notifyemails>
-  <notifyowner>F</notifyowner>
+  <notifyowner>T</notifyowner>
   <notifyuser>F</notifyuser>
   <scriptfile>[/SuiteScripts/NetSuite/uc_SS_UE_Coupa_Employee_Sync.js]</scriptfile>
   <scriptcustomfields>

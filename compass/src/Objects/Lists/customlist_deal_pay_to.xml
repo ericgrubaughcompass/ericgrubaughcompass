@@ -5,7 +5,7 @@
   <name>Pay To</name>
   <customvalues>
     <customvalue scriptid="val_4285436_3751499_sb1_479">
-      <isinactive>F</isinactive>
+      <isinactive>T</isinactive>
       <value>Pay To Required</value>
     </customvalue>
     <customvalue scriptid="val_4285437_3751499_sb1_544">

@@ -4,7 +4,7 @@
   <name>UC UE AMA</name>
   <notifyadmins>F</notifyadmins>
   <notifyemails>netsuitedevs@compass.com</notifyemails>
-  <notifyowner>F</notifyowner>
+  <notifyowner>T</notifyowner>
   <notifyuser>F</notifyuser>
   <scriptfile>[/SuiteScripts/ama/uc_ue_ama.js]</scriptfile>
   <scriptdeployments>
