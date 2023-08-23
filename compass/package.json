@@ -9,7 +9,8 @@
     "test-ci": "jest --ci --runInBand",
     "test-ci-coverage": "jest --ci --runInBand --collectCoverage=true",
     "sdf-validate": "suitecloud project:deploy --dryrun",
-    "sdf-deploy": "suitecloud project:package && suitecloud project:deploy"
+    "sdf-deploy": "suitecloud project:package && suitecloud project:deploy",
+    "sdf-update-objects": "node ../scripts/generate-deploy-file.mjs \"$(../scripts/get_changed_objects)\""
   },
   "devDependencies": {
     "@oracle/suitecloud-cli": "^1",
