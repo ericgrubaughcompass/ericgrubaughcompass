@@ -1,4 +1,4 @@
 #! /usr/bin/env bash
 # Determines which SDF Object definitions have changed in the current SDF Project
 #
-git diff --name-only ./src/Objects/ | sed 's/*\/src/~/'
+git diff --merge-base main --name-only ./src/Objects/ | sed 's/*\/src/~/'

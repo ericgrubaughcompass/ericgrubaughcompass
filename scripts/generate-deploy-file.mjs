@@ -43,7 +43,7 @@ const toPaths = (paths) => paths.split('\n').filter(isValidPath)
  * @returns {boolean} true if the given path should be included in deploy.xml; false otherwise
  */
 const isValidPath = (path) =>
-  path.endsWith('.xml') && !ignoreFolders.some(folder => path.includes(folder))
+  path?.endsWith('.xml') && !ignoreFolders.some(folder => path?.includes(folder))
 
 
 // Validate and transform the paths into the appropriate XML
