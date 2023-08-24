@@ -3,12 +3,10 @@
 # For the master branch, we get all changes back to the previous Release tag.
 # For all other branches, we get all changes back to the merge base.
 #
-changed_objects=""
 current_branch=$(git branch --show-current)
 if [ "$current_branch" == "master" ]
 then
-  changed_objects=git diff --name-only "$(get_previous_release)"... ./src/Objects/
+  git diff --name-only "$(get_previous_release)"... -- ./src/Objects/ | sed 's/.*\/src/~/'
 else
-  changed_objects=git diff --name-only --merge-base main ./src/Objects/
+  git diff --name-only --merge-base main -- ./src/Objects/ | sed 's/.*\/src/~/'
 fi
-sed 's/*\/src/~/' "$changed_objects"
