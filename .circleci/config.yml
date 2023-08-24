@@ -85,6 +85,8 @@ jobs:
         default: compass
     steps:
       - install
+      - generate-deploy-file:
+          project: << parameters.project >>
       - deploy:
           account: << pipeline.parameters.netsuite_account >>
           project: << parameters.project >>
@@ -120,6 +122,20 @@ commands:
             npm run sdf-deploy
       - store_artifacts:
           path: << parameters.project >>/build
+  generate-deploy-file:
+    description: Generates a deploy.xml file for the given SDF project
+    parameters:
+      project:
+        description: The SDF Project to deploy
+        type: enum
+        enum: [ "compass", "compass-workflows", "compass-objects" ]
+        default: compass
+    steps:
+      - run:
+          name: Generating deploy file for << parameters.project >>
+          command: |
+            cd << parameters.project >>
+            npm run sdf-update-objects
   install:
     description: Checks out code and installs npm package
     parameters:

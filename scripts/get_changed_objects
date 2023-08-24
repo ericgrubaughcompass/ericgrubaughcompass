@@ -1,4 +1,14 @@
 #! /usr/bin/env bash
-# Determines which SDF Object definitions have changed in the current SDF Project
+# Determines which SDF Object definitions have changed in the current SDF Project.
+# For the master branch, we get all changes back to the previous Release tag.
+# For all other branches, we get all changes back to the merge base.
 #
-git diff --merge-base main --name-only ./src/Objects/ | sed 's/*\/src/~/'
+changed_objects=""
+current_branch=$(git branch --show-current)
+if [ "$current_branch" == "master" ]
+then
+  changed_objects=git diff --name-only "$(get_previous_release)"... ./src/Objects/
+else
+  changed_objects=git diff --name-only --merge-base main ./src/Objects/
+fi
+sed 's/*\/src/~/' "$changed_objects"

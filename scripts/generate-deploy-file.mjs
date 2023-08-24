@@ -33,7 +33,7 @@ const ignoreFolders = [
  *
  * @returns {string[]} List of valid Object file paths
  */
-const toPaths = (paths) => paths.split('\n').filter(isValidPath)
+const toPaths = (paths) => (paths?.split('\n') ?? []).filter(isValidPath)
 
 /**
  * Determines whether the given Object file path is valid for deployment
@@ -45,20 +45,30 @@ const toPaths = (paths) => paths.split('\n').filter(isValidPath)
 const isValidPath = (path) =>
   path?.endsWith('.xml') && !ignoreFolders.some(folder => path?.includes(folder))
 
+// Deployment descriptor. We'll always add all Files to deploy.xml as
+// SDF already diffs and deploys only changed Files automatically.
+const deployData = {
+  files: {path: '~/FileCabinet/*'}
+};
+
+// process.argv contains the command-line elements which triggered execution
+// The first element is the path to the node executable, the second is the executable file,
+// so we're only interested in the third element, which should be our file paths
+const objectPaths = toPaths(argv[2]);
+
+// Only add the objects structure to the deployment descriptor if there are changed Objects.
+// Otherwise, an empty objects node would result in an error at deployment time.
+if (objectPaths.length) {
+  deployData.objects = {
+    paths: objectPaths
+  }
+}
 
 // Validate and transform the paths into the appropriate XML
 const xml = new xml2js.Builder({
   rootName: 'deploy',
   headless: true
-}).buildObject({
-  files: {path: '~/FileCabinet/*'},
-  objects: {
-    // process.argv contains the command-line elements which triggered execution
-    // The first element is the path to the node executable, the second is the executable file,
-    // so we're only interested in the third element, which should be our file paths
-    path: toPaths(argv[2])
-  }
-});
+}).buildObject(deployData);
 
 // Overwrite the current Project's deploy.xml file with the newly generated XML
 writeFileSync(`${cwd()}/src/deploy.xml`, xml);
